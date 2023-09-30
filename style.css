@@ -1,0 +1,1393 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kanit:ital,wght@1,500&family=Martian+Mono:wght@500&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kanit:ital,wght@1,500&family=Martian+Mono:wght@500&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Josefin+Sans&family=Kanit:ital,wght@1,500&family=Martian+Mono:wght@500&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Josefin+Sans&family=Kanit:ital,wght@1,500&family=Martian+Mono:wght@500&family=Oswald&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Josefin+Sans&family=Kanit:ital,wght@0,700;1,500&family=Martian+Mono:wght@500&family=Oswald&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Josefin+Sans&family=Kanit:ital,wght@0,700;1,500&family=Lato&family=Martian+Mono:wght@500&family=Oswald&family=Poppins:wght@700&display=swap');
+
+/* Root element  */
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(248 239 239);
+}
+
+/* Navbar components  */
+
+.navbar1 {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 59px;
+    font-family: 'Martian Mono', monospace;
+    font-size: 10px;
+}
+
+.navAnchor {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Left nav  */
+
+.leftNav {
+    display: flex;
+    width: 24%;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    cursor: pointer;
+
+}
+
+.navItemsLeft {
+    width: 21%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Right nav  */
+
+.rightNav {
+    display: flex;
+    width: 25%;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 5%;
+    cursor: pointer;
+}
+
+.navItemsRight {
+    width: 21%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logoDiv {
+    width: 4.2%;
+    height: 60px;
+    position: relative;
+    top: 6px;
+    box-shadow: 3px 2px 34px white;
+    border-radius: 48px;
+    transition: all ease-in-out 0.35s;
+    z-index: 1;
+}
+
+
+.logoDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Carousel components  */
+
+.carousel {
+    box-shadow: 0px 1px 10px white;
+}
+
+.carousel-indicators {
+    width: 100%;
+    left: 0;
+}
+
+.item {
+    width: 100%;
+    height: 490px;
+}
+
+.item img {
+    width: 100%;
+    height: 490px !important;
+    object-fit: cover;
+    background-position: center;
+}
+
+/* Images with id  */
+
+#firstImg,
+#secondImg {
+    object-fit: cover;
+}
+
+/* Shop container  */
+
+.shopContainer {
+    height: 252px;
+}
+
+/* Box container  */
+
+.boxContainer {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24%;
+    gap: 11%;
+    transition: all ease-in-out 0.3s;
+}
+
+.box img {
+    width: 40%;
+    height: 56%;
+
+}
+
+
+.boxInfo a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Second container  */
+
+.secondContainer {
+    height: 285px;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 20%;
+    height: 73%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 2px 1px 7px black;
+    transition: all ease-in-out 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: 75%;
+    border-radius: 5px;
+
+}
+
+#xBox {
+    height: 64%;
+}
+
+#sBox {
+    height: 88%;
+}
+
+#surfu {
+    height: 80%;
+}
+
+/* Third container & Fifth container  */
+
+.thirdContainer {
+    width: 92%;
+    height: 500px;
+    position: relative;
+    margin-left: 4% !important;
+    margin-top: 4% !important;
+}
+
+.thirdContainer::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url('https://www.equitypandit.com/wp-content/uploads/2022/04/GettyImages-1323900927-d4b8e26cf28f44129e189465fa5a73a8.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+#insideContainerOne {
+    width: 35%;
+    position: relative;
+    left: 58%;
+    top: 4%;
+}
+
+#insideContainerOne button {
+    padding: 8px !important;
+    width: 21.5%;
+    background-color: rgb(104, 213, 246);
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#insideContainerTwo {
+    width: 40%;
+    position: relative;
+    top: 12%;
+    left: 5%;
+}
+
+#insideContainerTwo button {
+    padding: 8px !important;
+    width: 21.5%;
+    background-color: rgb(104, 213, 246);
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#upgradeTwo {
+    font-size: 6rem;
+}
+
+
+.fifthContainer {
+    width: 92%;
+    height: 500px;
+    position: relative;
+    ;
+    margin-left: 4% !important;
+    margin-top: 4% !important;
+}
+
+.fifthContainer::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url('https://wallpapers.com/images/hd/windows-11-4k-black-and-white-c05d9vyiscnq31uy.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+
+
+
+/* Fourth container  */
+
+.businessContainer {
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4% !important;
+}
+
+
+.newCard img {
+    border-radius: 0px;
+    height: 54%;
+}
+
+#sTwo {
+    height: 64%;
+}
+
+#win11 {
+    height: 70%;
+
+}
+
+#win365 {
+    height: 70%;
+
+}
+
+.jalwa {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+
+.fnt {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+.headNPara {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+/* Sixth container  */
+
+.socialContainer {
+    height: 122px;
+    display: flex;
+}
+
+.socialBox {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    gap: 1.5%;
+    width: 91.5%;
+}
+
+
+.socialDiv {
+    width: 2.1%;
+    height: 26%;
+    position: relative;
+    left: 4.5%;
+}
+
+.socialDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+#jump {
+    width: 7.5%;
+    height: 23.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    top: 39%;
+}
+
+#jump:hover {
+    background-color: rgb(248 239 239);
+    ;
+    box-shadow: 0px 0px 10px rgb(236, 198, 198);
+}
+
+
+#jump a {
+    text-decoration: none;
+    color: black;
+}
+
+#follow {
+    width: 10%;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#follow a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer starts here  */
+
+.footer {
+    border-top: 1px solid white;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Foot container inside  */
+
+#footContainerInside {
+    display: flex;
+    gap: 4%;
+    margin-top: 2% !important;
+    height: 332px;
+    padding-left: 4.5% !important;
+}
+
+.footBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+
+
+.footContent h4 {
+    font-weight: bold;
+}
+
+/* Foot container outside  */
+
+
+#footContainerOutside {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 0 !important;
+    font-size: 1.2rem;
+}
+
+.leftFoot {
+    gap: 17%;
+    display: flex;
+    margin-left: 4% !important;
+    width: 20%;
+}
+
+.ico {
+    font-size: 1.6rem;
+}
+
+.rightFoot {
+    display: flex;
+    gap: 2%;
+    width: 34%;
+}
+
+
+.footLeftIn {
+    display: flex;
+    gap: 8px;
+}
+
+/* Hovering classes  */
+
+
+
+.boxInfo a:hover {
+    text-shadow: 2px 1px 7px white;
+}
+
+.box:hover {
+    filter: invert();
+    transform: scale(1.1);
+}
+
+.logoDiv:hover {
+    filter: invert();
+    transform: scale(1.1);
+    box-shadow: 1px 1px 50px yellow;
+}
+
+.navAnchor:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.anchor:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Utility classes  */
+
+.commonUpgrade {
+    color: white;
+    font-size: 3.8rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.newCard {
+    position: relative;
+    top: 7%;
+    height: 333px;
+    width: 293px;
+    border-radius: 1%;
+    border: none;
+    box-shadow: 0px 1px 2px white;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3%;
+    background-color: rgb(179, 119, 179);
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+#lg-width {
+    width: 32%;
+}
+
+#mx-width {
+    width: 29%;
+
+}
+
+#cart-wd {
+    width: 16%;
+}
+
+.box-shadow {
+    transition: all ease-in-out 0.2s;
+}
+
+.box-shadow:hover {
+    filter: invert();
+    box-shadow: 1px 1px 50px black;
+}
+
+#team-wd {
+    width: 18%;
+}
+
+
+
+.stylish {
+    font-family: 'Croissant One', cursive;
+}
+
+.heading {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.7rem;
+    position: relative;
+    width: 15%;
+    left: 1%;
+    margin-top: 1.5% !important;
+}
+
+/* Media queries  */
+
+@media screen and (max-width:1478px) {
+    .rightFoot {
+        width: 36%;
+    }
+
+    .leftFoot {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width:1465px) {
+    #sTwo {
+        height: 59%;
+    }
+
+    .headNPara {
+        gap: 30px;
+    }
+
+    .fnt {
+        font-size: 14px;
+    }
+
+    .jalwa {
+        font-size: 18px;
+    }
+
+    #win365 {
+        height: 64%
+    }
+
+    #win11 {
+        height: 64%;
+    }
+
+    .newCard img {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:1420px) {
+    #follow {
+        width: 13%;
+        font-size: 1.7rem;
+    }
+
+    .socialDiv {
+        width: 2%;
+        height: 22%;
+    }
+
+    #jump {
+        width: 9%;
+        right: 4%;
+    }
+
+}
+
+@media screen and (max-width:1398px) {
+    .leftFoot {
+        gap: 9%;
+        margin-left: 2% !important;
+        width: 28%;
+    }
+
+    .rightFoot {
+        gap: 2%;
+        width: 39%;
+    }
+
+}
+
+@media screen and (max-width:1377px) {
+    #lg-width {
+        width: 43%;
+    }
+
+    #mx-width {
+        width: 43%;
+    }
+
+    .heading {
+        width: 18%;
+    }
+
+    .logoDiv {
+        width: 4%;
+        height: 49px;
+    }
+
+    .leftNav {
+        left: 14%;
+    }
+
+    .rightNav {
+        right: 14%;
+    }
+}
+
+@media screen and (max-width:1342px) {
+    .commonUpgrade {
+        font-size: 3.2rem;
+    }
+
+}
+
+@media screen and (max-width:1324px) {
+    .fifthContainer {
+        margin-top: 6% !important;
+    }
+
+
+    .secondContainer {
+        height: 285px;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 270px;
+        height: 199px;
+    }
+
+    .newHeight {
+        height: 297px;
+    }
+
+    .boxContainer {
+        max-width: 100%;
+    }
+
+    .box {
+        width: 212px;
+        height: 185px;
+    }
+}
+
+@media screen and (max-width:1296px) {
+    .rightFoot {
+        width: 51%;
+        gap: 1%;
+    }
+}
+
+@media screen and (max-width:1224px) {
+    #upgradeTwo {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:1205px) {
+
+    #footContainerInside {
+        flex-wrap: wrap;
+        gap: 3%;
+        height: 437px;
+    }
+}
+
+
+@media screen and (max-width:1148px) {
+
+    .card {
+        margin-top: 4% !important;
+    }
+
+    .newHeight {
+        margin-top: 4% !important;
+    }
+
+    .heading {
+        width: 96%;
+    }
+
+    .secondContainer {
+        margin-top: 2% !important;
+    }
+
+    .thirdContainer {
+        margin-top: 23% !important;
+    }
+}
+
+@media screen and (max-width:1138px) {
+
+    #footContainerInside {
+        gap: 21%;
+        height: 846px;
+    }
+
+    #footContainerOutside {
+        position: relative;
+        top: 16px;
+    }
+}
+
+@media screen and (max-width:1075px) {
+    #lg-width {
+        display: none;
+    }
+
+    #mx-width {
+        display: none;
+    }
+
+    .logoDiv {
+        width: 5%;
+        height: 40px;
+    }
+
+
+    .leftNav {
+        left: 10%;
+        width: 27%;
+        gap: 14%;
+    }
+
+    .rightNav {
+        right: 10%;
+        width: 27%;
+        gap: 14%;
+    }
+
+    .navItemsRight {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width:995px) {
+    #jump {
+        width: 14%;
+        right: 6%;
+    }
+
+    .socialDiv {
+        height: 14%;
+    }
+
+    #insideContainerOne button {
+        width: 38.5%;
+    }
+
+}
+
+@media screen and (max-width:953px) {
+    .leftFoot {
+        display: none;
+    }
+
+    .rightFoot {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #footContainerInside {
+        gap: 10%;
+        height: 834px;
+    }
+}
+
+@media screen and (max-width:849px) {
+    .secondContainer {
+        margin-top: 28% !important;
+    }
+
+    .thirdContainer {
+        margin-top: 33% !important;
+    }
+}
+
+@media screen and (max-width:878px) {
+    #insideContainerTwo button {
+        width: 34.5%;
+    }
+}
+
+@media screen and (max-width:820px) {
+    #insideContainerOne {
+        width: 42%;
+        left: 46%;
+    }
+
+    #insideContainerOne button {
+        width: 32%;
+    }
+
+    .secondContainer {
+        margin-top: 23% !important;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    #insideContainerOne {
+        width: 45%;
+        left: 45%;
+    }
+
+
+    #insideContainerOne button {
+        width: 34.5%;
+    }
+}
+
+@media screen and (max-width:663px) {
+
+    #follow {
+        width: 29%;
+        font-size: 1.9rem;
+    }
+
+    .socialDiv {
+        height: 25%;
+        width: 5%;
+    }
+
+    #jump {
+        width: 21%;
+        right: 11%;
+    }
+
+    #footContainerInside {
+        gap: 8%;
+        height: 1065px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:649px) {
+    .rightNav {
+        gap: 0%;
+    }
+
+    .navbar1 {
+        justify-content: space-around;
+    }
+
+    .logoDiv {
+        width: 6%;
+        height: 33px
+    }
+}
+
+@media screen and (max-width:641px) {
+
+    .businessContainer {
+        gap: 5%;
+    }
+
+}
+
+@media screen and (max-width:559px) {
+    .secondContainer {
+        margin-top: 29% !important;
+    }
+
+}
+
+@media screen and (max-width:548px) {
+    .thirdContainer {
+        margin-top: 124% !important;
+    }
+
+    .newHeight {
+        margin-top: 6% !important;
+    }
+
+    #insideContainerOne {
+        width: 53%;
+        left: 38%;
+    }
+
+    .commonUpgrade {
+        font-size: 2.5rem;
+    }
+
+    #insideContainerTwo {
+        width: 71%;
+        top: 15%;
+        left: 11%;
+    }
+
+    #upgradeTwo {
+        font-size: 2.9rem;
+    }
+
+    #insideContainerOne button {
+        width: 90px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 11px;
+        left: 42px;
+    }
+
+    #insideContainerTwo button {
+        width: 90px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 11px;
+        left: 111px;
+    }
+}
+
+@media screen and (max-width:517px) {
+    .navbar1 {
+        justify-content: start;
+    }
+
+    .logoDiv {
+        position: absolute;
+        top: 1.5%;
+        left: 2%;
+    }
+
+    .leftNav {
+        position: absolute;
+        left: 19%;
+        gap: 44%;
+    }
+
+    .rightNav {
+        position: absolute;
+        left: 58%;
+        gap: 21%
+    }
+
+    #off {
+        display: none;
+    }
+
+    .thirdContainer {
+        margin-top: 143% !important;
+        width: 356px;
+        height: 312px;
+        margin-left: 12% !important;
+    }
+
+    .rightFoot {
+        flex-wrap: wrap;
+    }
+
+    .fifthContainer {
+        width: 356px;
+        height: 312px;
+        margin-left: 12% !important;
+
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+
+    .secondContainer {
+        margin-top: 37% !important;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .commonUpgrade {
+        font-size: 1.5rem;
+    }
+
+    #follow {
+        font-size: 1.2rem;
+    }
+
+    .socialDiv {
+        height: 14%;
+        width: 4%;
+    }
+
+    #jump {
+        font-size: 1.1rem;
+        width: 24%;
+    }
+
+    #upgradeTwo {
+        width: 152px;
+        font-size: 1.5rem;
+    }
+
+    #insideContainerOne button {
+        width: 69px;
+        height: 24px;
+    }
+
+    #insideContainerTwo button {
+        left: 55px;
+        width: 69px;
+        height: 24px;
+    }
+
+}
+
+@media screen and (max-width:443px) {
+    .item {
+        height: 297px !important;
+    }
+
+    .item img {
+        height: 100% !important;
+    }
+
+    .secondContainer {
+        margin-top: 42% !important;
+    }
+
+
+}
+
+@media screen and (max-width:425px) {
+
+    .logoDiv {
+        display: none;
+    }
+
+    .secondContainer {
+        margin-top: 137% !important;
+    }
+}
+
+@media screen and (max-width:422px) {
+
+    .thirdContainer {
+        margin-top: 162% !important;
+        width: 292px;
+        height: 197px;
+        margin-left: 12% !important;
+    }
+
+    .fifthContainer {
+        width: 292px;
+        height: 197px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .secondContainer {
+        margin-top: 132% !important;
+    }
+
+    .thirdContainer {
+        margin-top: 152% !important;
+        margin-left: 15% !important;
+    }
+
+    .fifthContainer {
+        margin-left: 14% !important;
+    }
+}
+
+@media screen and (max-width:412px) {
+    #insideContainerOne button {
+        top: 6px;
+    }
+
+    .thirdContainer {
+        margin-top: 153% !important;
+        margin-left: 15% !important;
+    }
+
+    .fifthContainer {
+        margin-top: 8% !important;
+        margin-left: 14% !important;
+    }
+
+    #insideContainerOne button {
+        width: 69px;
+        height: 20px;
+        left: 63px;
+        font-size: 1.3rem;
+
+    }
+}
+
+@media screen and (max-width:401px) {
+    #footContainerInside {
+        gap: 4%;
+        height: 1336px;
+    }
+}
+
+@media screen and (max-width:393px) {
+    .secondContainer {
+        margin-top: 146% !important;
+    }
+
+    .thirdContainer {
+        margin-top: 156% !important;
+        margin-left: 13% !important;
+    }
+
+    .fifthContainer {
+        margin-left: 13% !important;
+    }
+
+}
+
+@media screen and (max-width:382px) {
+    .heading {
+        font-size: 2.1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .thirdContainer {
+        margin-top: 206% !important;
+        width: 239px;
+        height: 145px;
+    }
+
+    .fifthContainer {
+        width: 239px;
+        height: 145px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .thirdContainer {
+        width: 278px;
+        height: 181px;
+        margin-left: 13% !important;
+    }
+
+    .fifthContainer {
+        width: 278px;
+        height: 181px;
+
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .thirdContainer {
+        margin-top: 173% !important;
+        margin-left: 16% !important;
+    }
+
+    #insideContainerOne {
+        width: 61%;
+    }
+
+    .commonUpgrade {
+        font-size: 1.2rem;
+    }
+
+    #insideContainerOne button {
+        width: 59px;
+        height: 16px;
+        left: 56px;
+        font-size: 1.1rem;
+        top: 0px;
+    }
+
+    .fifthContainer {
+        margin-left: 16% !important;
+    }
+
+    #insideContainerTwo {
+        top: 7%;
+        left: 4%;
+    }
+
+    #insideContainerTwo button {
+        left: 49px;
+        top: 0px;
+        font-size: 1.1rem;
+        width: 64px;
+        height: 18px;
+    }
+
+}
+
+@media screen and (max-width:356px) {
+    .thirdContainer {
+        margin-left: 11% !important;
+    }
+
+    .fifthContainer {
+        margin-left: 11% !important;
+    }
+
+}
+
+@media screen and (max-width:345px) {
+    .secondContainer {
+        margin-top: 165% !important;
+    }
+
+    .thirdContainer {
+        margin-top: 181% !important;
+        margin-left: 9% !important;
+    }
+
+}
+
+@media screen and (max-width:324px) {
+    .thirdContainer {
+        margin-top: 190% !important;
+        margin-left: 8% !important;
+    }
+
+    .fifthContainer{
+        margin-left: 6% !important;
+        margin-top: 12% !important;
+    }
+}
+
+@media screen and (max-width:315px) {
+    #footContainerInside {
+        gap: 7%;
+        height: 2406px;
+    }
+
+}
+
+@media screen and (max-width:282px) {
+    .navbar1 {
+        font-size: 9px;
+
+    }
+
+    .leftNav {
+        gap: 55%;
+    }
+
+    .rightNav {
+        position: absolute;
+        left: 65%;
+        gap: 32%;
+    }
+
+    .secondContainer {
+        margin-top: 187% !important;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .thirdContainer {
+        margin-top: 216% !important;
+        margin-left: 0% !important;
+    }
+
+    .fifthContainer {
+
+        margin-left: 0% !important;
+        margin-top: 11% !important;
+    }
+
+    #jump {
+        height: 17.5%;
+        right: 13%;
+        font-size: 0.9rem;
+        width: 25%;
+    }
+
+    .socialDiv {
+        height: 15%;
+        width: 7%;
+    }
+
+    #insideContainerTwo button {
+        left: 0px;
+        width: 56px;
+        height: 17px;
+        font-size: 0.9rem;
+    }
+
+    .commonUpgrade {
+        font-size: 1.1rem;
+    }
+
+    #insideContainerOne button {
+        font-size: 0.9rem;
+        width: 56px;
+        height: 17px;
+
+    }
+
+    #footContainerOutside {
+        font-size: 11px;
+    }
+
+    .rightFoot {
+        gap: 9%;
+    }
+}
