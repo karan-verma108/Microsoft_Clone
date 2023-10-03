@@ -17,6 +17,28 @@ body {
     background-color: rgb(248 239 239);
 }
 
+/* For light/dark mode  */
+
+.myDark{
+    background-color: rgb(187, 183, 183);
+    color: white;
+}
+
+
+/* Coupon  */
+
+#coupon{
+    height: 300px;
+    width: 600px;
+    background-color: yellow;
+    position: absolute;
+    margin-top: 41% !important;
+    margin-left: 31% !important;
+    z-index: 100;
+    box-shadow: 1px 1px 4px white;
+    visibility: hidden;
+}
+
 /* Navbar components  */
 
 .navbar1 {
@@ -27,6 +49,7 @@ body {
     height: 59px;
     font-family: 'Martian Mono', monospace;
     font-size: 10px;
+    z-index: 0;
 }
 
 .navAnchor {
@@ -102,6 +125,7 @@ body {
 
 .carousel {
     box-shadow: 0px 1px 10px white;
+    z-index: -1;
 }
 
 .carousel-indicators {

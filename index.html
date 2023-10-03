@@ -12,12 +12,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
 
     <nav id="myNavi" class="navbar1">
+        <div id="coupon">
+            <button onclick="closeCoupon()">&times;</button>
+        </div>
 
         <div class="leftNav">
             <div id="lg-width" class="navItemsLeft radius box-shadow"><a class="navAnchor" href="#">Microsoft 365</a>
@@ -35,6 +39,7 @@
         </div>
 
         <div class="rightNav">
+            <button onclick="changeMode()" class="glyphicon glyphicon-off"></button>
             <div id="mx-width" class="navItemsRight radius box-shadow"><a class="navAnchor href=" #">All Microsoft</a>
             </div>
             <div class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Search</a></div>
@@ -578,6 +583,7 @@
             </div>
 
     </footer>
+
 
 </body>
 
