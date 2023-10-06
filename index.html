@@ -17,11 +17,27 @@
 
 <body>
 
-
-    <nav id="myNavi" class="navbar1">
-        <div id="coupon">
-            <button onclick="closeCoupon()">&times;</button>
+    <div id="coupon">
+        <div class="couponContent">
+            <img src="./images/coupon_img.jpg" alt="">
         </div>
+
+        <div class="infoBox">
+
+            <div class="infoInside">
+                New Surface Pro
+            </div>
+            <div class="infoInside">
+                Shop Now
+            </div>
+            <button class="btn-primary resizeBtn">Order Now</button>
+        </div>
+
+        <button class="mainBtn" onclick="closeCoupon()">&times;</button>
+
+    </div>
+
+    <nav id="myNavi" class="navbar1 opacClass">
 
         <div class="leftNav">
             <div id="lg-width" class="navItemsLeft radius box-shadow"><a class="navAnchor" href="#">Microsoft 365</a>
@@ -50,25 +66,25 @@
 
     <!-- Carousel starting  -->
 
-    <div id="devCarousel" class="carousel slide" data-ride="carousel">
+    <div id="devCarousel" class="carousel slide opacClass" data-ride="carousel">
+
         <div class="carousel-inner">
 
             <div class="item active">
 
-                <img id="firstImg" src="https://images.hdqwalls.com/wallpapers/windows-11-minimal-4k-iu.jpg" alt="Latest laptop"
-                    title="Latest laptop">
-            </div>
-
-            <div class="item">
-
-                <img id="secondImg"
-                    src="https://wallpaperswide.com/download/laptop_3-wallpaper-3840x2160.jpg"
+                <img  class="newImg" id="firstImg" src="https://images.hdqwalls.com/wallpapers/windows-11-minimal-4k-iu.jpg"
                     alt="Latest laptop" title="Latest laptop">
             </div>
 
             <div class="item">
 
-                <img src="https://cdn.mos.cms.futurecdn.net/w8bQcLLeHQHssyNGpWgCZJ.jpeg" alt="Latest laptop"
+                <img class="newImg" id="secondImg" src="https://wallpaperswide.com/download/laptop_3-wallpaper-3840x2160.jpg"
+                    alt="Latest laptop" title="Latest laptop">
+            </div>
+
+            <div class="item">
+
+                <img class="newImg" src="https://cdn.mos.cms.futurecdn.net/w8bQcLLeHQHssyNGpWgCZJ.jpeg" alt="Latest laptop"
                     title="Latest laptop">
             </div>
 
@@ -96,7 +112,7 @@
 
     <!-- Shop container  -->
 
-    <div class="shopContainer">
+    <div class="shopContainer opacClass">
         <div class="heading">
             Shop Online
         </div>
@@ -295,7 +311,7 @@
         <div id="jump">
             <a href="#myNavi">
                 <i class="glyphicon glyphicon-arrow-up"></i>
-                    Back to top
+                Back to top
             </a>
         </div>
     </div>
@@ -580,10 +596,9 @@
                 </div>
             </div>
 
-            </div>
+        </div>
 
     </footer>
-
 
 </body>
 
