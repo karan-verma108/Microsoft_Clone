@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <div id="coupon">
         <div class="couponContent">
             <img src="./images/coupon_img.jpg" alt="">
@@ -39,6 +38,12 @@
 
     <nav id="myNavi" class="navbar1 opacClass">
 
+        <div id="newAlert" class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <span id="temp">Loading...</span>
+        </div>
+
         <div class="leftNav">
             <div id="lg-width" class="navItemsLeft radius box-shadow"><a class="navAnchor" href="#">Microsoft 365</a>
 
@@ -55,7 +60,7 @@
         </div>
 
         <div class="rightNav">
-            <button onclick="changeMode()" class="glyphicon glyphicon-off"></button>
+            <button onclick="changeMode()" class="glyphicon glyphicon-off mode"></button>
             <div id="mx-width" class="navItemsRight radius box-shadow"><a class="navAnchor href=" #">All Microsoft</a>
             </div>
             <div class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Search</a></div>
@@ -72,20 +77,22 @@
 
             <div class="item active">
 
-                <img  class="newImg" id="firstImg" src="https://images.hdqwalls.com/wallpapers/windows-11-minimal-4k-iu.jpg"
-                    alt="Latest laptop" title="Latest laptop">
-            </div>
-
-            <div class="item">
-
-                <img class="newImg" id="secondImg" src="https://wallpaperswide.com/download/laptop_3-wallpaper-3840x2160.jpg"
-                    alt="Latest laptop" title="Latest laptop">
-            </div>
-
-            <div class="item">
-
-                <img class="newImg" src="https://cdn.mos.cms.futurecdn.net/w8bQcLLeHQHssyNGpWgCZJ.jpeg" alt="Latest laptop"
+                <img class="newImg" id="firstImg"
+                    src="https://images.hdqwalls.com/wallpapers/windows-11-minimal-4k-iu.jpg" alt="Latest laptop"
                     title="Latest laptop">
+            </div>
+
+            <div class="item">
+
+                <img class="newImg" id="secondImg"
+                    src="https://wallpaperswide.com/download/laptop_3-wallpaper-3840x2160.jpg" alt="Latest laptop"
+                    title="Latest laptop">
+            </div>
+
+            <div class="item">
+
+                <img class="newImg" src="https://cdn.mos.cms.futurecdn.net/w8bQcLLeHQHssyNGpWgCZJ.jpeg"
+                    alt="Latest laptop" title="Latest laptop">
             </div>
 
             <!-- Navigation using left right icons  -->
@@ -113,6 +120,10 @@
     <!-- Shop container  -->
 
     <div class="shopContainer opacClass">
+
+        <button class="geoLoc" id="getTemp">
+            Temp <br> °C
+        </button>
         <div class="heading">
             Shop Online
         </div>
@@ -601,5 +612,46 @@
     </footer>
 
 </body>
+<script>
+
+    const findLocation = () => {
+        const temp = document.getElementById('temp')
+
+        const success = (position) => {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            const geoAPI = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+
+            fetch(geoAPI, { method: 'GET' })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    let cityName = data.city.name;
+                    let temperature = data.list[0].temp.day + '°C';
+                    temp.textContent = `Your city, ${cityName}'s temperature is ${temperature}`
+                })
+        }
+
+        const error = () => {
+            temp.textContent = 'Unable to get your location'
+        }
+
+        navigator.geolocation.getCurrentPosition(success, error)
+    }
+
+    document.getElementById('getTemp').addEventListener('click', findLocation)
+
+    const visible = document.getElementById('newAlert')
+    const getTemp = document.getElementById('getTemp')
+
+    const makeVisible = () => {
+        visible.style.visibility = 'visible'
+        getTemp.style.visibility = 'hidden'
+    }
+
+    document.getElementById('getTemp').addEventListener('click', makeVisible)
+
+</script>
 
 </html>
