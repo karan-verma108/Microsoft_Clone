@@ -21,8 +21,8 @@ body {
 /* For light/dark mode  */
 
 .myDark{
-    background-color: rgb(187, 183, 183);
-    color: white;
+    background-color: rgb(110, 103, 103) !important;
+    color: white !important;
 }
 
 
