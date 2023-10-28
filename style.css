@@ -20,7 +20,7 @@ body {
 
 /* For light/dark mode  */
 
-.myDark{
+.myDark {
     background-color: rgb(110, 103, 103) !important;
     color: white !important;
 }
@@ -28,7 +28,7 @@ body {
 
 /* Coupon  */
 
-#coupon{
+#coupon {
     height: 300px;
     width: 600px;
     position: absolute;
@@ -44,7 +44,7 @@ body {
 
 }
 
-.mainBtn{
+.mainBtn {
     position: relative;
     width: 21px;
     height: 19px;
@@ -59,18 +59,18 @@ body {
 
 }
 
-.couponContent{
-    width: 366px;
-    height: 300px;
+.couponContent {
+    width: 62%;
+    height: 100%;
 }
 
-.couponContent img{
+.couponContent img {
     width: 100%;
     height: 100%;
     border-radius: 6px;
 }
 
-.infoBox{
+.infoBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,13 +80,13 @@ body {
 
 }
 
-.resizeBtn{
+.resizeBtn {
     width: 100px !important;
     height: 25px !important;
     border-radius: 5px;
 }
 
-.infoInside{
+.infoInside {
     font-size: 23px;
 }
 
@@ -623,11 +623,11 @@ body {
 }
 
 
-.box-shadow a{
+.box-shadow a {
     text-decoration: none;
 }
 
-.box-shadow a:hover{
+.box-shadow a:hover {
     color: black;
 }
 
@@ -653,13 +653,13 @@ body {
 
 /* Light/dark mode  */
 
-.mode{
+.mode {
     border: none;
 }
 
 /* Alert box  */
 
-.alert{
+.alert {
     position: fixed;
     top: 10%;
     z-index: 12;
@@ -667,16 +667,16 @@ body {
     visibility: hidden;
 }
 
-.geoLoc{
-    background: linear-gradient(rgb(183, 183, 236), blue );
+.geoLoc {
+    background: linear-gradient(rgb(183, 183, 236), blue);
     color: white;
 }
 
 /* Get temperature button  */
 
-#getTemp{
-    height: 8%;
-    width: 4%;
+#getTemp {
+    height: 50px;
+    width: 58px;
     font-size: 17px;
     border-radius: 25%;
     position: fixed;
@@ -693,12 +693,12 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-#getTemp:hover{
-    background: linear-gradient(rgb(44, 168, 230), rgb(112, 112, 161) );
-    
+#getTemp:hover {
+    background: linear-gradient(rgb(44, 168, 230), rgb(112, 112, 161));
+
 }
 
-#temp{
+#temp {
     display: inline-block !important;
     padding-top: 4px !important;
 }
@@ -854,6 +854,9 @@ body {
     #upgradeTwo {
         font-size: 3.5rem;
     }
+    #coupon{
+        margin-left: 29% !important;
+    }
 }
 
 @media screen and (max-width:1205px) {
@@ -902,6 +905,8 @@ body {
     }
 }
 
+
+
 @media screen and (max-width:1075px) {
     #lg-width {
         display: none;
@@ -932,6 +937,15 @@ body {
     .navItemsRight {
         width: 52%;
     }
+    #coupon {
+        margin-left: 23% !important;
+        height: 268px;
+    }
+
+    #newAlert {
+        left: 34%;
+    }
+
 }
 
 @media screen and (max-width:995px) {
@@ -960,6 +974,14 @@ body {
         display: flex;
         justify-content: center;
     }
+}
+
+@media screen and (max-width:932px) {
+    #coupon{
+        width: 544px;
+        margin-left: 20% !important;
+    }
+    
 }
 
 @media screen and (max-width:900px) {
@@ -1001,6 +1023,23 @@ body {
 
 }
 
+@media screen and (max-width:807px) {
+    #coupon{
+        width: 468px;
+        height: 234px;
+        margin-top: 15% !important;
+    }
+
+    .infoInside{
+        font-size: 20px;
+    }
+
+    #newAlert {
+        left: 28%;
+    }
+    
+}
+
 
 @media screen and (max-width:768px) {
     #insideContainerOne {
@@ -1036,6 +1075,21 @@ body {
         height: 1065px;
         justify-content: space-between;
     }
+    #coupon{
+        width: 386px;
+        height: 182px;
+        margin-top: 20% !important;
+    }
+
+    .infoInside {
+        font-size: 16px;
+    }
+
+    #getTemp {
+        height: 43px;
+        width: 50px;
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:649px) {
@@ -1051,6 +1105,10 @@ body {
         width: 6%;
         height: 33px
     }
+
+    #newAlert {
+        left: 24%;
+    }
 }
 
 @media screen and (max-width:641px) {
@@ -1064,6 +1122,19 @@ body {
 @media screen and (max-width:559px) {
     .secondContainer {
         margin-top: 29% !important;
+    }
+    #coupon {
+        width: 331px;
+        height: 165px;
+        margin-top: 28% !important;
+    }
+
+    .infoInside{
+        font-size: 14px;
+    }
+
+    .resizeBtn{
+        font-size: 13px;
     }
 
 }
@@ -1164,6 +1235,10 @@ body {
 
     }
 
+    #newAlert {
+        left: 18%;
+    }
+
 
 }
 
@@ -1208,7 +1283,14 @@ body {
         width: 69px;
         height: 24px;
     }
+    #coupon {
+        width: 274px;
+        margin-top: 31% !important;
+    }
 
+    .infoInside {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:443px) {
@@ -1290,6 +1372,10 @@ body {
         font-size: 1.3rem;
 
     }
+
+    #newAlert {
+        left: 10%;
+    }
 }
 
 @media screen and (max-width:401px) {
@@ -1346,6 +1432,9 @@ body {
         height: 181px;
 
     }
+    #coupon {
+        margin-left: 14% !important;
+    }
 
 }
 
@@ -1388,6 +1477,11 @@ body {
         height: 18px;
     }
 
+    #newAlert {
+        left: 13%;
+        font-size: 8px !important;
+    }
+
 }
 
 @media screen and (max-width:356px) {
@@ -1397,6 +1491,12 @@ body {
 
     .fifthContainer {
         margin-left: 11% !important;
+    }
+
+    #getTemp {
+        height: 35px;
+        width: 41px;
+        font-size: 11px;
     }
 
 }
@@ -1411,6 +1511,12 @@ body {
         margin-left: 9% !important;
     }
 
+    #coupon {
+        width: 243px;
+        height: 129px;
+        margin-top: 41% !important;
+    }
+
 }
 
 @media screen and (max-width:324px) {
@@ -1419,7 +1525,7 @@ body {
         margin-left: 8% !important;
     }
 
-    .fifthContainer{
+    .fifthContainer {
         margin-left: 6% !important;
         margin-top: 12% !important;
     }
@@ -1430,7 +1536,29 @@ body {
         gap: 7%;
         height: 2406px;
     }
+    #coupon {
+        width: 219px;
+        height: 110px;
+        margin-top: 48% !important;
+    }
+    .resizeBtn {
+        width: 90px !important;
+        height: 19px !important;
+        font-size: 12px;
+    }
 
+    .infoInside{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:304px) {
+    #newAlert {
+        left: 11%;
+        font-size: 7px !important;
+    }
+    
 }
 
 @media screen and (max-width:282px) {
