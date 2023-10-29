@@ -31,10 +31,37 @@ const changeMode = () => {
     const myBody = document.body
     const myNavi = document.getElementsByClassName('navbar1')[0];
     const footer = document.getElementsByClassName('footer')[0];
+    const changeView = document.getElementsByClassName('changeView')[0];
     
     myBody.classList.toggle('myDark')
     myNavi.classList.toggle('myDark')
     footer.classList.toggle('myDark')
+    changeView.classList.toggle('newIconChange')
+    
+    for(let index = 0; index<9; index++){
+        const navAnchor = document.getElementsByClassName('navAnchor')[index];
+        navAnchor.classList.toggle('newNavAnchor');
+    }
+    
+    for(let index = 0; index<4;index++){
+        const boxClass = document.getElementsByClassName('box')[index];
+        boxClass.classList.toggle('invertBox')
+    }
+
+    for(let i = 0; i<2; i++){
+        const heading = document.getElementsByClassName('heading')[i]
+        heading.classList.toggle('invertHeading')
+    }
+
+    for(let j = 0; j<6; j++){
+        const footContent = document.getElementsByClassName('footBox')[j]
+        footContent.classList.toggle('footInvert')
+    }
+
+    for(let i = 0; i<4; i++){
+        const socialBox = document.getElementsByClassName('socialBox')[i]
+        socialBox.classList.toggle('socialInvert')
+    }
 }
 
 
