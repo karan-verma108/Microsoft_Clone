@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Josefin+Sans&family=Kanit:ital,wght@0,700;1,500&family=Lato&family=Martian+Mono:wght@500&family=Oswald&family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Gabarito&family=Josefin+Sans&family=Kanit:ital,wght@0,700;1,500&family=Lato&family=Martian+Mono:wght@500&family=Oswald&family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
 /* Root element  */
 
 * {
@@ -31,7 +33,7 @@ body {
 #coupon {
     height: 300px;
     width: 600px;
-    position: absolute;
+    position: fixed;
     margin-top: 11% !important;
     margin-left: 31% !important;
     z-index: 5;
@@ -110,12 +112,12 @@ body {
     color: black;
 }
 
-.navAnchor:hover{
+.navAnchor:hover {
     text-decoration: none;
     color: black;
 }
 
-.newNavAnchor{
+.newNavAnchor {
     color: white !important;
 }
 
@@ -259,7 +261,7 @@ body {
 
 }
 
-.invertBox{
+.invertBox {
     filter: invert();
 }
 
@@ -447,7 +449,7 @@ body {
     width: 91.5%;
 }
 
-.socialInvert{
+.socialInvert {
     filter: invert();
 }
 
@@ -541,7 +543,7 @@ body {
     font-weight: bold;
 }
 
-.footInvert{
+.footInvert {
     color: white !important;
 }
 
@@ -664,7 +666,7 @@ body {
     margin-top: 1.5% !important;
 }
 
-.invertHeading{
+.invertHeading {
     color: white;
 }
 
@@ -721,7 +723,7 @@ body {
     padding-top: 4px !important;
 }
 
-.changeView{
+.changeView {
     width: 3%;
     height: 43px;
     border: none;
@@ -733,13 +735,116 @@ body {
     top: 10%;
 }
 
-.changeView img{
+.changeView img {
     width: 100%;
     height: 100%;
 }
 
-.newIconChange{
+.newIconChange {
     filter: none;
+}
+
+/* All Microsoft button  */
+
+#allMicro {
+    font-size: 1rem;
+    background: none;
+    color: black;
+    outline: none;
+}
+
+.allMicroLi {
+    font-size: 1rem;
+}
+
+#dropdown_id {
+    width: 84vw;
+    left: -836%;
+    min-height: 53vh;
+    top: 39px;
+    cursor: auto;
+}
+
+.liContainer{
+    float: left;
+    padding: 2% 2% 3% 5% !important;
+}
+
+.liBox{
+    font-size: 1.1rem;
+    padding-top: 16px !important;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.liBox a{
+    color: black;
+}
+
+.liBox a:hover{
+    text-decoration: none;
+}
+
+.extra{
+    font-size: 1.4rem;
+    padding-bottom: 16px !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ::selection{
+    color: aqua;
+    background-color: black;
+} */
+
+/* Search bar CSS  */
+
+
+
+#custom-search-input {
+    margin:0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#custom-search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    right: 56px;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    position: relative;
+    border-radius: 3px;
+    color: blue;
+}
+
+.search-query:focus + button {
+    z-index: 3;   
+}
+
+.form-control{
+    height: 21px;
+    font-size: 10px;
+    border: none;
+}
+
+.input-group .form-control {
+    width: 67%;
 }
 
 /* Media queries  */
@@ -893,7 +998,8 @@ body {
     #upgradeTwo {
         font-size: 3.5rem;
     }
-    #coupon{
+
+    #coupon {
         margin-left: 29% !important;
     }
 }
@@ -930,7 +1036,7 @@ body {
         margin-top: 23% !important;
     }
 
-    .changeView{
+    .changeView {
         height: 35px;
 
     }
@@ -981,6 +1087,7 @@ body {
     .navItemsRight {
         width: 52%;
     }
+
     #coupon {
         margin-left: 23% !important;
         height: 268px;
@@ -988,6 +1095,10 @@ body {
 
     #newAlert {
         left: 34%;
+    }
+
+    #offerId{
+        display: none;
     }
 
 }
@@ -1021,7 +1132,7 @@ body {
 }
 
 @media screen and (max-width:932px) {
-    #coupon{
+    #coupon {
         width: 544px;
         margin-left: 20% !important;
     }
@@ -1030,7 +1141,7 @@ body {
         height: 28px;
         top: 17%;
     }
-    
+
 }
 
 @media screen and (max-width:900px) {
@@ -1070,26 +1181,28 @@ body {
         margin-top: 23% !important;
     }
 
+
 }
 
 @media screen and (max-width:807px) {
-    #coupon{
+    #coupon {
         width: 468px;
         height: 234px;
         margin-top: 15% !important;
     }
 
-    .infoInside{
+    .infoInside {
         font-size: 20px;
     }
 
     #newAlert {
         left: 28%;
     }
+
     .changeView {
         height: 23px;
     }
-    
+
 }
 
 
@@ -1127,7 +1240,8 @@ body {
         height: 1065px;
         justify-content: space-between;
     }
-    #coupon{
+
+    #coupon {
         width: 386px;
         height: 182px;
         margin-top: 20% !important;
@@ -1174,23 +1288,32 @@ body {
         width: 4%;
     }
 
+    #surfaceId{
+        display: none;
+    }
+
+    #allMicro{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:559px) {
     .secondContainer {
         margin-top: 29% !important;
     }
+
     #coupon {
         width: 331px;
         height: 165px;
         margin-top: 28% !important;
     }
 
-    .infoInside{
+    .infoInside {
         font-size: 14px;
     }
 
-    .resizeBtn{
+    .resizeBtn {
         font-size: 13px;
     }
 
@@ -1274,10 +1397,6 @@ body {
         gap: 21%
     }
 
-    #off {
-        display: none;
-    }
-
     .thirdContainer {
         margin-top: 143% !important;
         width: 356px;
@@ -1344,6 +1463,7 @@ body {
         width: 69px;
         height: 24px;
     }
+
     #coupon {
         width: 274px;
         margin-top: 31% !important;
@@ -1484,6 +1604,7 @@ body {
         width: 239px;
         height: 145px;
     }
+
     .changeView {
         height: 23px;
     }
@@ -1501,6 +1622,7 @@ body {
         height: 181px;
 
     }
+
     #coupon {
         margin-left: 14% !important;
     }
@@ -1605,18 +1727,20 @@ body {
         gap: 7%;
         height: 2406px;
     }
+
     #coupon {
         width: 219px;
         height: 110px;
         margin-top: 48% !important;
     }
+
     .resizeBtn {
         width: 90px !important;
         height: 19px !important;
         font-size: 12px;
     }
 
-    .infoInside{
+    .infoInside {
         font-size: 12px;
     }
 
@@ -1627,7 +1751,7 @@ body {
         left: 11%;
         font-size: 7px !important;
     }
-    
+
 }
 
 @media screen and (max-width:282px) {

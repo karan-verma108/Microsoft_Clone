@@ -64,9 +64,6 @@ const changeMode = () => {
     }
 }
 
-
-
-
 // geolocation 
 
 const findLocation = () => {

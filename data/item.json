@@ -1,0 +1,138 @@
+[
+    {
+        "id": 1,
+        "name": "Surface Pro 9",
+        "category_id": 1,
+        "image": "https://cdn.neowin.com/news/images/uploaded/2022/10/1665393857_surface_pro_9_2.jpg",
+        "info": "The perfect companion for all you do. With powerful new processors, optional 5G connectivity and an ultra-portable design that starts at just 878 g, Surface Pro ...",
+        "price": "1,11,312 INR"
+    },
+    {
+        "id": 2,
+        "name": "Surface Pro 8",
+        "category_id": 1,
+        "image": "https://m.media-amazon.com/images/I/61voBxm1e0L._AC_UF1000,1000_QL80_.jpg",
+        "info": "Surface Pro 8 is designed to light up the best of Windows 11, enabling you to work, play, and create in ways most natural to you. Laptop, tablet, or portable ...",
+        "price": "1,67,990 INR"
+    },
+    {
+        "id": 3,
+        "name": "Surface Pro 7+",
+        "category_id": 1,
+        "image": "https://media.croma.com/image/upload/v1667854533/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/259210_10_vy3vwt.png",
+        "info": "Surface Pro 7+ transforms from laptop to tablet to digital canvas with the innovative, adjustable Kickstand. It's a portable and lightweight 2-in-1 so you can ...",
+        "price": "88,900.00 INR"
+    },
+    {
+        "id": 4,
+        "name": "Surface Laptop 5",
+        "category_id": 1,
+        "image": "https://i.rtings.com/assets/products/hsc731WP/microsoft-surface-laptop-5-2022/design-medium.jpg",
+        "info": "Multitask with Surface Laptop 5, a sleek and super lightweight, high-performance touchscreen laptop with a remarkable keyboard. Choose your size and vibrant ...",
+        "price": "1,72,500 INR"
+    },
+    {
+        "id": 5,
+        "name": "Surface Laptop Studio 2",
+        "category_id": 1,
+        "image": "https://helios-i.mashable.com/imagery/articles/07xXfiyITMVoEPBm1L5HgFm/hero-image.fill.size_1200x1200.v1695331719.jpg",
+        "info": "Explore the versatility of Surface Laptop Studio 2. Unleash your creativity and productivity with its innovative touchscreen and powerful laptop features.",
+        "price": "1,65,726 INR"
+    },
+    {
+        "id": 6,
+        "name": "Surface Laptop Go 2",
+        "category_id": 1,
+        "image": "https://s.yimg.com/uu/api/res/1.2/NKpI0AcwIU.qI3D4W8jUPg--~B/Zmk9ZmlsbDtoPTYzMDtweW9mZj0wO3c9MTIwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-06/c73cd750-ed07-11ec-abdf-7b1af5b1e683.cf.jpg",
+        "info": "Discover the new Surface Laptop Go 2, a lightweight laptop from Microsoft Surface that has an ultra-thin 12.4” PixelSense™ Display optimised for Windows 11",
+        "price": "74,500.00 INR"
+    },
+    {
+        "id": 7,
+        "name": "Surface Laptop Go 3",
+        "category_id": 1,
+        "image": "https://www.gizmochina.com/wp-content/uploads/2023/09/microsoft-surface-laptop-go-3-fcc-certification-1024x538.jpg",
+        "info": "Essential power, exceptional portability, an all-day battery life, and a 12.4” touchscreen. All at under 1.13 kg, it is the perfect everyday laptop.",
+        "price": "79,990.00 INR"
+    },
+    {
+        "id": 8,
+        "name": "Arc Touch Mouse",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/51psc7McT3L.jpg",
+        "info": "Curves for comfort and flattens to pack, a perfect fit for your hand and lifestyle",
+        "price": "3,545.16 INR"
+    },
+    {
+        "id": 9,
+        "name": "Wireless Mobile Mouse 1850",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/81Hc+y73UBL.jpg",
+        "info": "Designed for life on the go, this little mouse offers wireless freedom.",
+        "price": "1,340.00 INR"
+    },
+    {
+        "id": 10,
+        "name": "Wireless Mobile Mouse 4000",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/51dEtNg7wWL._AC_UF1000,1000_QL80_.jpg",
+        "info": "Features BlueTrack technology, a 10-month battery life, reliable wireless, and more.",
+        "price": "1,622.36 INR"
+    },
+    {
+        "id": 11,
+        "name": "Wireless Mobile Mouse 3500",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/51azfdOdV+L._AC_UF350,350_QL80_.jpg",
+        "info": "Works on virtually any surface* thanks to Microsoft BlueTrack Technology.",
+        "price": "1,752.54 INR"
+    },
+    {
+        "id": 12,
+        "name": "Wired desktop 600",
+        "category_id": 3,
+        "image": "https://m.media-amazon.com/images/I/81-CJPEfWoL.jpg",
+        "info": "Combines a spill resistant keyboard and optical mouse to deliver all the reliability and quality features you need.",
+        "price": "841.22 INR"
+    },
+    {
+        "id": 13,
+        "name": "Wireless Desktop 850",
+        "category_id": 3,
+        "image": "https://m.media-amazon.com/images/I/71KxsD0GUjL._AC_UF1000,1000_QL80_.jpg",
+        "info": "AES security and wireless convenience are at your fingertips with this compact wireless keyboard and mouse set.",
+        "price": "1,000.00 INR"
+    },
+    {
+        "id": 14,
+        "name": "LifeCam Cinema",
+        "category_id": 4,
+        "image": "https://m.media-amazon.com/images/I/313Qby9yVDL.jpg",
+        "info": "This True 720p HD video camera brings colour, sharpness and digital sound to your vlogs and video calls.",
+        "price": "3,545.16 INR"
+    },
+    {
+        "id": 15,
+        "name": "LifeCam Hd-3000",
+        "category_id": 4,
+        "image": "https://images-eu.ssl-images-amazon.com/images/I/51Vqy9xZrtL._AC_UL600_SR600,600_.jpg",
+        "info": "True HD video camera that gives you bright and colourful video, and makes it easy to post to your favourite social sites.",
+        "price": "1,742.54 INR"
+    },
+    {
+        "id": 16,
+        "name": "LifeCam Studio",
+        "category_id": 4,
+        "image": "https://m.media-amazon.com/images/I/61pEhGVNckL.jpg",
+        "info": "The LifeCam Studio webcam brings HD quality to your video chats and Skype calls.",
+        "price": "2,523.67 INR"
+    },
+    {
+        "id": 17,
+        "name": "LifeChat LX-3000",
+        "category_id": 5,
+        "image": "https://m.media-amazon.com/images/I/51PNkoTLu9L._AC_UF1000,1000_QL80_.jpg",
+        "info": "Hold clear, private, internet voice calls, enjoy music and films, and become fully immersed in your games with this headset.",
+        "price": "1,742.54 INR"
+    }
+]

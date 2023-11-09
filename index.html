@@ -49,7 +49,7 @@
             </div>
             <div id="team-wd" class="navItemsLeft radius box-shadow"><a class="navAnchor" href="#">Teams</a></div>
             <div class="navItemsLeft radius box-shadow"><a class="navAnchor" href="#">Windows</a></div>
-            <div class="navItemsLeft radius box-shadow"><a class="navAnchor" href="#">Surface</a></div>
+            <div id="surfaceId" class="navItemsLeft radius box-shadow"><a class="navAnchor" href="#">Surface</a></div>
 
         </div>
 
@@ -62,11 +62,67 @@
             <button onclick="changeMode()" class="changeView">
                 <img id="noneFilter" src="https://cdn-icons-png.flaticon.com/512/5115/5115625.png" alt="">
             </button>
-            <div id="mx-width" class="navItemsRight radius box-shadow"><a class="navAnchor href=" #">All Microsoft</a>
-            </div>
-            <div class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Search</a></div>
-            <div id="cart-wd" class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Cart</a></div>
-            <div id="off" class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Sign in</a></div>
+            <div class="dropdown">
+                <button id="allMicro" class="btn dropdown-toggle" type="button" data-toggle="dropdown">All Microsoft
+                <span class="caret"></span></button>
+                <ul id="dropdown_id" class="dropdown-menu">
+                  <div class="liContainer">
+                      <li class="liBox extra">PCs and Devices</li>
+                      <li class="liBox"><a href="">Surface Pro 9</a></li>
+                      <li class="liBox"><a href="">Surface Pro 8</a></li>
+                      <li class="liBox"><a href="">Surface Pro 7+</a></li>
+                      <li class="liBox"><a href="">Surface Laptop 5</a></li>
+                      <li class="liBox"><a href="">Surface Laptop Studio 2</a></li>
+                      <li class="liBox"><a href="">Surface Laptop Go 2</a></li>
+                      <li class="liBox"><a href="">Surface Laptop Go 3</a></li>
+                    </div>
+                  <div class="liContainer">
+                      <li class="liBox extra">Mouse</li>
+                      <li class="liBox"><a href="">Arc Touch Mouse</a></li>
+                      <li class="liBox"><a href="">Wireless Mobile Mouse 1850</a></li>
+                      <li class="liBox"><a href="">Wireless Mobile Mouse 4000</a></li>
+                      <li class="liBox"><a href="">Wireless Mobile Mouse 3500</a></li>
+                    </div>
+                  <div class="liContainer">
+                      <li class="liBox extra">Keyboard</li>
+                      <li class="liBox"><a href="">Wired desktop 600</a></li>
+                      <li class="liBox"><a href="">Wireless Desktop 850</a></li>
+                    </div>
+                  <div class="liContainer">
+                      <li class="liBox extra">Webcam</li>
+                      <li class="liBox"><a href="">LifeCam Cinema</a></li>
+                      <li class="liBox"><a href="">LifeCam Hd-3000</a></li>
+                      <li class="liBox"><a href="">LifeCam Studio</a></li>
+                    </div>
+                  <div class="liContainer">
+                      <li class="liBox extra">Headsets and Audio</li>
+                      <li class="liBox"><a href="">LifeChat LX-3000</a></li>
+                      <li class="liBox"><a href="">AI</a></li>
+                      <li class="liBox"><a href="">OneDrive</a></li>
+                      <li class="liBox"><a href="">Outlook</a></li>
+                      <li class="liBox"><a href="">Skype</a></li>
+                      <li class="liBox"><a href="">OneNote</a></li>
+                      <li class="liBox"><a href="">Microsoft Teams</a></li>
+                    </div>
+                  <div class="liContainer">
+                      <li class="liBox extra">Software</li>
+                      <li class="liBox"><a href="">Windows Apps</a></li>
+                      <li class="liBox"><a href="">AI</a></li>
+                      <li class="liBox"><a href="">OneDrive</a></li>
+                      <li class="liBox"><a href="">Outlook</a></li>
+                      <li class="liBox"><a href="">Skype</a></li>
+                      <li class="liBox"><a href="">OneNote</a></li>
+                      <li class="liBox"><a href="">Microsoft Teams</a></li>
+                    </div>
+
+                    </ul>
+              </div>
+
+            
+            <div id="offerId" class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Offers <i class="glyphicon glyphicon-star"></i></a></div>
+
+            <div id="cart-wd" class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Cart <i class="glyphicon glyphicon-shopping-cart"></i></a></div>
+            <div id="off" class="navItemsRight radius box-shadow"><a class="navAnchor" href="#">Sign in <i class="glyphicon glyphicon-log-in"></i></a></div>
         </div>
     </nav>
 

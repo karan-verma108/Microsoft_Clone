@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "category" : "PCs and Devices"
+    },
+    {
+        "id": 2,
+        "category": "Mouse"
+    },
+    {
+        "id": 3,
+        "category": "Keyboard"
+    },
+    {
+        "id": 4,
+        "category": "Webcam"
+    },
+    {
+        "id": 5,
+        "category": "Headsets and Audio"
+    }
+]
