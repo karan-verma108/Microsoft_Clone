@@ -38,29 +38,29 @@ const changeMode = () => {
     footer.classList.toggle('myDark')
     changeView.classList.toggle('newIconChange')
     
-    for(let index = 0; index<9; index++){
+    for(let index = 0; index<8; index++){
         const navAnchor = document.getElementsByClassName('navAnchor')[index];
         navAnchor.classList.toggle('newNavAnchor');
     }
     
     for(let index = 0; index<4;index++){
         const boxClass = document.getElementsByClassName('box')[index];
-        boxClass.classList.toggle('invertBox')
+        boxClass.classList.toggle('invertBox');
     }
 
     for(let i = 0; i<2; i++){
-        const heading = document.getElementsByClassName('heading')[i]
-        heading.classList.toggle('invertHeading')
+        const heading = document.getElementsByClassName('heading')[i];
+        heading.classList.toggle('invertHeading');
     }
 
     for(let j = 0; j<6; j++){
-        const footContent = document.getElementsByClassName('footBox')[j]
-        footContent.classList.toggle('footInvert')
+        const footContent = document.getElementsByClassName('footBox')[j];
+        footContent.classList.toggle('footInvert');
     }
 
-    for(let i = 0; i<4; i++){
-        const socialBox = document.getElementsByClassName('socialBox')[i]
-        socialBox.classList.toggle('socialInvert')
+    for(let i = 0; i<1; i++){
+        const socialBox = document.getElementsByClassName('socialBox')[i];
+        socialBox.classList.toggle('socialInvert');
     }
 }
 
