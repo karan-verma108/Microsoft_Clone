@@ -513,6 +513,7 @@ body {
 
 .footer a {
     text-decoration: none;
+    color: black;
 }
 
 .footer a:hover {
@@ -1118,7 +1119,7 @@ body {
         left: 34%;
     }
 
-    #offerId{
+    #supportId{
         display: none;
     }
 

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "X-box Series X",
+        "category_id": 6,
+        "image": "https://assets.xboxservices.com/assets/fb/d2/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png?n=XBX_A-BuyBoxBGImage01-D.png",
+        "info": "Discover the fastest, most powerful Xbox ever with the Xbox Series X. Enjoy 4K gaming at up to 120 frames per second on this next generation video game ...",
+        "price": "54990",
+        "average_rating": "5",
+        "rating_text": "Excellent"
+    },
+    {
+        "id": 2,
+        "name": "X-box Series S",
+        "category_id": 6,
+        "image": "https://images.hindustantimes.com/tech/img/2020/09/15/960x540/Untitled_design_(2)_1600155046355_1600155053071.png",
+        "info": "Xbox Series S is designed for disc-free gaming at 1440p (with the ability to upscale to 4K) and you can choose between 512 GB SSD or 1 TB SSD. And, of course, ...",
+        "price": "34990",
+        "average_rating": "4",
+        "rating_text": "Good"
+    }
+]

@@ -9,14 +9,13 @@ const onloadPage = () => {
 }
 
 
-// For light/dark mode on click 
-
+// for making the coupon appear 2 seconds late
 setTimeout(() => {
     onloadPage()
-
+    
 }, 2000);
 
-
+// after coupon is closed
 const closeCoupon = () => {
     document.getElementById('coupon').style.visibility = 'hidden';
     for (let index = 0; index < 3; index++) {
@@ -27,6 +26,7 @@ const closeCoupon = () => {
 }
 
 
+// For light/dark mode on click 
 const changeMode = () => {
     const myBody = document.body
     const myNavi = document.getElementsByClassName('navbar1')[0];
@@ -54,13 +54,18 @@ const changeMode = () => {
     }
 
     for(let j = 0; j<6; j++){
-        const footContent = document.getElementsByClassName('footBox')[j];
+        const footContent = document.getElementsByClassName('footContent')[j];
         footContent.classList.toggle('footInvert');
     }
 
     for(let i = 0; i<1; i++){
         const socialBox = document.getElementsByClassName('socialBox')[i];
         socialBox.classList.toggle('socialInvert');
+    }
+
+    for(let i = 0; i<53; i++){
+        const footA = document.getElementsByClassName('footA')[i];
+        footA.classList.toggle('footInvert');
     }
 }
 

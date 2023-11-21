@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Arc Touch Mouse",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/51psc7McT3L.jpg",
+        "info": "Curves for comfort and flattens to pack, a perfect fit for your hand and lifestyle",
+        "price": "3545",
+        "average_rating": "5",
+        "rating_text": "Excellent"
+    },
+    {
+        "id": 2,
+        "name": "Wireless Mobile Mouse 1850",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/81Hc+y73UBL.jpg",
+        "info": "Designed for life on the go, this little mouse offers wireless freedom.",
+        "price": "1340",
+        "average_rating": "4",
+        "rating_text": "Good"
+    },
+    {
+        "id": 3,
+        "name": "Wireless Mobile Mouse 4000",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/51dEtNg7wWL._AC_UF1000,1000_QL80_.jpg",
+        "info": "Features BlueTrack technology, a 10-month battery life, reliable wireless, and more.",
+        "price": "1622",
+        "average_rating": "3",
+        "rating_text": "Decent"
+    },
+    {
+        "id": 4,
+        "name": "Wireless Mobile Mouse 3500",
+        "category_id": 2,
+        "image": "https://m.media-amazon.com/images/I/51azfdOdV+L._AC_UF350,350_QL80_.jpg",
+        "info": "Works on virtually any surface* thanks to Microsoft BlueTrack Technology.",
+        "price": "1752",
+        "average_rating": "1",
+        "rating_text": "Poor"
+    }
+]

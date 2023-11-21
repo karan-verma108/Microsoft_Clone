@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Surface Pro 9",
+        "category_id": 1,
+        "image": "https://cdn.neowin.com/news/images/uploaded/2022/10/1665393857_surface_pro_9_2.jpg",
+        "info": "The perfect companion for all you do. With powerful new processors, optional 5G connectivity and an ultra-portable design that starts at just 878 g, Surface Pro ...",
+        "price": "111312",
+        "average_rating": "4",
+        "rating_text": "Good"
+    },
+    {
+        "id": 2,
+        "name": "Surface Pro 8",
+        "category_id": 1,
+        "image": "https://m.media-amazon.com/images/I/61voBxm1e0L._AC_UF1000,1000_QL80_.jpg",
+        "info": "Surface Pro 8 is designed to light up the best of Windows 11, enabling you to work, play, and create in ways most natural to you. Laptop, tablet, or portable ...",
+        "price": "167990",
+        "average_rating": "5",
+        "rating_text": "Excellent"
+    },
+    {
+        "id": 3,
+        "name": "Surface Pro 7+",
+        "category_id": 1,
+        "image": "https://media.croma.com/image/upload/v1667854533/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/259210_10_vy3vwt.png",
+        "info": "Surface Pro 7+ transforms from laptop to tablet to digital canvas with the innovative, adjustable Kickstand. It's a portable and lightweight 2-in-1 so you can ...",
+        "price": "88900",
+        "average_rating": "4",
+        "rating_text": "Good"
+    },
+    {
+        "id": 4,
+        "name": "Surface Laptop 5",
+        "category_id": 1,
+        "image": "https://i.rtings.com/assets/products/hsc731WP/microsoft-surface-laptop-5-2022/design-medium.jpg",
+        "info": "Multitask with Surface Laptop 5, a sleek and super lightweight, high-performance touchscreen laptop with a remarkable keyboard. Choose your size and vibrant ...",
+        "price": "172500",
+        "average_rating": "3",
+        "rating_text": "Decent"
+    },
+    {
+        "id": 5,
+        "name": "Surface Laptop Studio 2",
+        "category_id": 1,
+        "image": "https://helios-i.mashable.com/imagery/articles/07xXfiyITMVoEPBm1L5HgFm/hero-image.fill.size_1200x1200.v1695331719.jpg",
+        "info": "Explore the versatility of Surface Laptop Studio 2. Unleash your creativity and productivity with its innovative touchscreen and powerful laptop features.",
+        "price": "165726",
+        "average_rating": "5",
+        "rating_text": "Excellent"
+    },
+    {
+        "id": 6,
+        "name": "Surface Laptop Go 2",
+        "category_id": 1,
+        "image": "https://s.yimg.com/uu/api/res/1.2/NKpI0AcwIU.qI3D4W8jUPg--~B/Zmk9ZmlsbDtoPTYzMDtweW9mZj0wO3c9MTIwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-06/c73cd750-ed07-11ec-abdf-7b1af5b1e683.cf.jpg",
+        "info": "Discover the new Surface Laptop Go 2, a lightweight laptop from Microsoft Surface that has an ultra-thin 12.4” PixelSense™ Display optimised for Windows 11",
+        "price": "74500",
+        "average_rating": "2",
+        "rating_text": "Average"
+    },
+    {
+        "id": 7,
+        "name": "Surface Laptop Go 3",
+        "category_id": 1,
+        "image": "https://www.gizmochina.com/wp-content/uploads/2023/09/microsoft-surface-laptop-go-3-fcc-certification-1024x538.jpg",
+        "info": "Essential power, exceptional portability, an all-day battery life, and a 12.4” touchscreen. All at under 1.13 kg, it is the perfect everyday laptop.",
+        "price": "79990",
+        "average_rating": "3",
+        "rating_text": "Decent"
+    }
+]

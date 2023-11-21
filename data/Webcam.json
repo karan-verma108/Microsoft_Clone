@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "LifeCam Cinema",
+        "category_id": 4,
+        "image": "https://m.media-amazon.com/images/I/313Qby9yVDL.jpg",
+        "info": "This True 720p HD video camera brings colour, sharpness and digital sound to your vlogs and video calls.",
+        "price": "3545",
+        "average_rating": "5",
+        "rating_text": "Excellent"
+    },
+    {
+        "id": 2,
+        "name": "LifeCam Hd-3000",
+        "category_id": 4,
+        "image": "https://images-eu.ssl-images-amazon.com/images/I/51Vqy9xZrtL._AC_UL600_SR600,600_.jpg",
+        "info": "True HD video camera that gives you bright and colourful video, and makes it easy to post to your favourite social sites.",
+        "price": "1742",
+        "average_rating": "2",
+        "rating_text": "Average"
+    },
+    {
+        "id": 3,
+        "name": "LifeCam Studio",
+        "category_id": 4,
+        "image": "https://m.media-amazon.com/images/I/61pEhGVNckL.jpg",
+        "info": "The LifeCam Studio webcam brings HD quality to your video chats and Skype calls.",
+        "price": "2523",
+        "average_rating": "3",
+        "rating_text": "Decent"
+    }
+]

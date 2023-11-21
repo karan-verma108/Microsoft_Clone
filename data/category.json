@@ -18,5 +18,9 @@
     {
         "id": 5,
         "category": "Headsets and Audio"
+    },
+    {
+        "id": 6,
+        "category": "Xbox"
     }
 ]

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Wired desktop 600",
+        "category_id": 3,
+        "image": "https://m.media-amazon.com/images/I/81-CJPEfWoL.jpg",
+        "info": "Combines a spill resistant keyboard and optical mouse to deliver all the reliability and quality features you need.",
+        "price": "841",
+        "average_rating": "4",
+        "rating_text": "Good"
+    },
+    {
+        "id": 2,
+        "name": "Wireless Desktop 850",
+        "category_id": 3,
+        "image": "https://m.media-amazon.com/images/I/71KxsD0GUjL._AC_UF1000,1000_QL80_.jpg",
+        "info": "AES security and wireless convenience are at your fingertips with this compact wireless keyboard and mouse set.",
+        "price": "1000",
+        "average_rating": "3",
+        "rating_text": "Decent"
+    }
+]
