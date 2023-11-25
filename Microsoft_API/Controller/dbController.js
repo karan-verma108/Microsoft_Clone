@@ -11,6 +11,7 @@ async function dbConnect(){
 
 let db = client.db('Microsoft_Clone') //specifying the database name
 
+// function for getting the data 
 async function getData(colName,query){
     let output = [];
     try{
@@ -25,8 +26,45 @@ async function getData(colName,query){
     return output;
 }
 
+// function for posting the data 
+async function postData(colName,data){
+    let output;
+    try{
+        output = db.collection(colName).insertOne(data);
+    } catch(err){
+        output.push({'Response' : 'Error in posting data'});
+    }    
+    return output;
+}
+
+// function for updating the data 
+async function updateData(colName,condition,data){
+    let output;
+    try{
+        output = await db.collection(colName).updateOne(condition,data)
+    } catch(err){
+        output = {'Response' : 'Error in updating data'}
+    }
+    return output
+}
+
+// function for deleting the data
+async function deleteData(colName,condition){
+    let output;
+    try{
+        output = await db.collection(colName).deleteOne(condition)
+    } catch(err){
+        output = {'Response' : 'Error in deleting data'}
+    }
+    return output
+}
+
+
 module.exports = {
     dbConnect,
-    getData
+    getData,
+    postData,
+    updateData,
+    deleteData
 }
 

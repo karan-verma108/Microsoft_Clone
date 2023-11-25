@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Karan",
+        "email": "karan@gmail.com",
+        "address": "Hno 25,Sector 9",
+        "phone": 986768686,
+        "price": 787,
+        "devices": [
+            3,
+            5,
+            7
+        ],
+        "status": "Pending",
+        "order_id" : 1
+    },
+    {
+        "name": "Sham",
+        "email": "sham@gmail.com",
+        "address": "Hno 29,Sector A",
+        "phone": 777768686,
+        "price": 124,
+        "devices": [
+            6,
+            34,
+            23
+        ],
+        "status": "Pending",
+        "order_id" : 2
+    },
+    {
+        "name": "Anjana",
+        "email": "anjana@gmail.com",
+        "address": "Hno 30,Sector B",
+        "phone": 7687323236,
+        "price": 344,
+        "devices": [
+            12,
+            45,
+            21
+        ],
+        "status": "Pending",
+        "order_id" : 3
+    }
+]

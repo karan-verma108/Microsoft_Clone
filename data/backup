@@ -1,0 +1,125 @@
+// Route for average_rating + price for pcdevice
+
+app.get('/filter/:category_id', async (req, res) => {
+    let category_id =(req.params.category_id)
+    let lprice = (req.query.lprice)
+    let hprice = (req.query.hprice)
+
+    if (lprice && hprice) {
+        query = {
+            'category_id': (req.params.category_id),
+            $and:[{price:{ $gt:lprice,$lt:hprice}}]
+        }        
+    }
+    else {
+        query = {}
+    }
+    let collection = 'All Device'
+    let output = await getData(collection, query)
+    res.send(output)
+})
+
+
+
+// Route for average_rating + price for mouse
+
+app.get('/filterm/:category_id', async (req, res) => {
+    let category_id =(req.params.category_id)
+    let lprice = (req.query.lprice)
+    let hprice = (req.query.hprice)
+
+    if (lprice && hprice) {
+        query = {
+            'category_id': (category_id),
+            $and:[{price:{ $gt:lprice,$lt:hprice}}]
+        }        
+    }
+    else {
+        query = {}
+    }
+    let collection = 'Mouse'
+    let output = await getData(collection, query)
+    res.send(output)
+})
+
+// Route for average_rating + price for keyboard
+
+app.get('/filterk/:keyboardId', async (req, res) => {
+    let keyboardId =(req.params.keyboardId)
+    let lprice = (req.query.lprice)
+    let hprice = (req.query.hprice)
+
+    if (lprice && hprice) {
+        query = {
+            'keyboardId': (keyboardId),
+            $and:[{price:{ $gt:lprice,$lt:hprice}}]
+        }        
+    }
+    else {
+        query = {}
+    }
+    let collection = 'Keyboard'
+    let output = await getData(collection, query)
+    res.send(output)
+})
+
+// Route for average_rating + price for webcam
+
+app.get('/filterw/:webcamId', async (req, res) => {
+    let webcamId =(req.params.webcamId)
+    let lprice = (req.query.lprice)
+    let hprice = (req.query.hprice)
+
+    if (lprice && hprice) {
+        query = {
+            'webcamId': (webcamId),
+            $and:[{price:{ $gt:lprice,$lt:hprice}}]
+        }        
+    }
+    else {
+        query = {}
+    }
+    let collection = 'Webcam'
+    let output = await getData(collection, query)
+    res.send(output)
+})
+
+// Route for average_rating + price for audiodevice
+
+app.get('/filterad/:audiodeviceId', async (req, res) => {
+    let audiodeviceId =(req.params.audiodeviceId)
+    let lprice = (req.query.lprice)
+    let hprice = (req.query.hprice)
+
+    if (lprice && hprice) {
+        query = {
+            'audiodeviceId': (audiodeviceId),
+            $and:[{price:{ $gt:lprice,$lt:hprice}}]
+        }        
+    }
+    else {
+        query = {}
+    }
+    let collection = 'Headsets and Audio'
+    let output = await getData(collection, query)
+    res.send(output)
+})
+
+// list of devices of selected category
+
+app.get('/devices', async (req, res) => {
+    let category_id = Number(req.query.category_id)
+    
+
+    if (req.query.category_id) {
+        query = {
+            'category_id': Number (req.query.category_id)
+        }        
+    }
+    else {
+        query = {}
+    }
+    let collection = 'All Device'
+    let output = await getData(collection, query)
+    res.send(output)
+})

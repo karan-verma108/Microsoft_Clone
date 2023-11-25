@@ -70,7 +70,7 @@
         "rating_text": "Decent"
     },
     {
-        "id": 1,
+        "id": 8,
         "name": "Arc Touch Mouse",
         "category_id": 2,
         "image": "https://m.media-amazon.com/images/I/51psc7McT3L.jpg",
@@ -80,7 +80,7 @@
         "rating_text": "Excellent"
     },
     {
-        "id": 2,
+        "id": 9,
         "name": "Wireless Mobile Mouse 1850",
         "category_id": 2,
         "image": "https://m.media-amazon.com/images/I/81Hc+y73UBL.jpg",
@@ -90,7 +90,7 @@
         "rating_text": "Good"
     },
     {
-        "id": 3,
+        "id": 10,
         "name": "Wireless Mobile Mouse 4000",
         "category_id": 2,
         "image": "https://m.media-amazon.com/images/I/51dEtNg7wWL._AC_UF1000,1000_QL80_.jpg",
@@ -100,7 +100,7 @@
         "rating_text": "Decent"
     },
     {
-        "id": 4,
+        "id": 11,
         "name": "Wireless Mobile Mouse 3500",
         "category_id": 2,
         "image": "https://m.media-amazon.com/images/I/51azfdOdV+L._AC_UF350,350_QL80_.jpg",
@@ -110,7 +110,7 @@
         "rating_text": "Poor"
     },
     {
-        "id": 1,
+        "id": 12,
         "name": "Wired desktop 600",
         "category_id": 3,
         "image": "https://m.media-amazon.com/images/I/81-CJPEfWoL.jpg",
@@ -120,7 +120,7 @@
         "rating_text": "Good"
     },
     {
-        "id": 2,
+        "id": 13,
         "name": "Wireless Desktop 850",
         "category_id": 3,
         "image": "https://m.media-amazon.com/images/I/71KxsD0GUjL._AC_UF1000,1000_QL80_.jpg",
@@ -130,7 +130,7 @@
         "rating_text": "Decent"
     },
     {
-        "id": 1,
+        "id": 14,
         "name": "LifeCam Cinema",
         "category_id": 4,
         "image": "https://m.media-amazon.com/images/I/313Qby9yVDL.jpg",
@@ -140,7 +140,7 @@
         "rating_text": "Excellent"
     },
     {
-        "id": 2,
+        "id": 15,
         "name": "LifeCam Hd-3000",
         "category_id": 4,
         "image": "https://images-eu.ssl-images-amazon.com/images/I/51Vqy9xZrtL._AC_UL600_SR600,600_.jpg",
@@ -150,7 +150,7 @@
         "rating_text": "Average"
     },
     {
-        "id": 3,
+        "id": 16,
         "name": "LifeCam Studio",
         "category_id": 4,
         "image": "https://m.media-amazon.com/images/I/61pEhGVNckL.jpg",
@@ -160,7 +160,7 @@
         "rating_text": "Decent"
     },
     {
-        "id": 1,
+        "id": 17,
         "name": "LifeChat LX-3000",
         "category_id": 5,
         "image": "https://m.media-amazon.com/images/I/51PNkoTLu9L._AC_UF1000,1000_QL80_.jpg",
@@ -170,7 +170,7 @@
         "rating_text": "Decent"
     },
     {
-        "id": 1,
+        "id": 18,
         "name": "X-box Series X",
         "category_id": 6,
         "image": "https://assets.xboxservices.com/assets/fb/d2/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png?n=XBX_A-BuyBoxBGImage01-D.png",
@@ -180,7 +180,7 @@
         "rating_text": "Excellent"
     },
     {
-        "id": 2,
+        "id": 19,
         "name": "X-box Series S",
         "category_id": 6,
         "image": "https://images.hindustantimes.com/tech/img/2020/09/15/960x540/Untitled_design_(2)_1600155046355_1600155053071.png",

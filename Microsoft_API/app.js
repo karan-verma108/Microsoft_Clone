@@ -4,7 +4,7 @@ let port = 8000
 let mongo = require('mongodb')
 let body_parser = require('body-parser')
 let cors = require('cors')
-let { dbConnect, getData } = require('./Controller/dbController')
+let { dbConnect, getData, postData, updateData, deleteData } = require('./Controller/dbController')
 
 // middleware - to use the above two exported modules over here, we need this line of code of a middleware(supporting library)
 // here middlewares are body-parser and cors
@@ -133,108 +133,128 @@ app.get('/audiodevice', async (req, res) => {
     res.send(output)
 })
 
-// Route for average_rating + price for pcdevice
-
-app.get('/filterpc/:pcdeviceId', async (req, res) => {
-    let pcdeviceId =(req.params.pcdeviceId)
-    let lprice = (req.query.lprice)
-    let hprice = (req.query.hprice)
-
-    if (lprice && hprice) {
+app.get('/xbox', async (req, res) => {
+    let query = {}
+    if (req.query.id && req.query.average_rating && req.query.price) {
         query = {
-            'pcdeviceId': (pcdeviceId),
-            $and:[{price:{ $gt:lprice,$lt:hprice}}]
-        }        
+            'id': Number(req.query.id),
+            'average_rating': (req.query.average_rating),
+            'price': (req.query.price)
+        }
     }
-    else {
-        query = {}
+    else if (req.query.id) {
+        query = { 'id': Number(req.query.id) }
     }
-    let collection = 'PCs and Devices'
+    else if (req.query.average_rating) {
+        query = { 'average_rating': (req.query.average_rating) }
+    }
+    else if (req.query.price) {
+        query = { 'price': (req.query.price) }
+    }
+    let collection = 'Xbox'
     let output = await getData(collection, query)
     res.send(output)
 })
 
-// Route for average_rating + price for mouse
-
-app.get('/filterm/:mouseId', async (req, res) => {
-    let mouseId =(req.params.mouseId)
-    let lprice = (req.query.lprice)
-    let hprice = (req.query.hprice)
-
-    if (lprice && hprice) {
+app.get('/alldevice', async (req, res) => {
+    let query = {}
+    if (req.query.id && req.query.average_rating && req.query.price && req.query.category_id) {
         query = {
-            'mouseId': (mouseId),
-            $and:[{price:{ $gt:lprice,$lt:hprice}}]
-        }        
+            'id': Number(req.query.id),
+            'average_rating': (req.query.average_rating),
+            'price': (req.query.price),
+            'cateogory_id' : Number(req.query.category_id)
+        }
     }
-    else {
-        query = {}
+    else if (req.query.id) {
+        query = { 'id': Number(req.query.id) }
     }
-    let collection = 'Mouse'
+    else if (req.query.average_rating) {
+        query = { 'average_rating': (req.query.average_rating) }
+    }
+    else if (req.query.price) {
+        query = { 'price': (req.query.price) }
+    }
+    else if (req.query.category_id) {
+        query = { 'category_id': Number (req.query.category_id) }
+    }
+    let collection = 'All Device'
     let output = await getData(collection, query)
     res.send(output)
 })
 
-// Route for average_rating + price for keyboard
+//Page 3 route > list of devices of selected category
 
-app.get('/filterk/:keyboardId', async (req, res) => {
-    let keyboardId =(req.params.keyboardId)
-    let lprice = (req.query.lprice)
-    let hprice = (req.query.hprice)
 
-    if (lprice && hprice) {
+app.get('/devices/:category_id', async (req, res) => {
+    let category_id = Number(req.params.category_id)
+    
         query = {
-            'keyboardId': (keyboardId),
-            $and:[{price:{ $gt:lprice,$lt:hprice}}]
+            'category_id': Number (req.params.category_id)
         }        
-    }
-    else {
-        query = {}
-    }
-    let collection = 'Keyboard'
+ 
+    
+    let collection = 'All Device'
     let output = await getData(collection, query)
     res.send(output)
 })
 
-// Route for average_rating + price for webcam
+// Page 4 route > Place order
 
-app.get('/filterw/:webcamId', async (req, res) => {
-    let webcamId =(req.params.webcamId)
-    let lprice = (req.query.lprice)
-    let hprice = (req.query.hprice)
+app.post('/placeOrder', async(req, res)=>{
+    let body = req.body
+    let collection = 'Orders'
+    let response = await postData(collection, body)
+    res.send(response)
+})
 
-    if (lprice && hprice) {
-        query = {
-            'webcamId': (webcamId),
-            $and:[{price:{ $gt:lprice,$lt:hprice}}]
-        }        
+// Page 4 route > Details of selected device (devices wrt id)
+app.post('/deviceDetails', async(req, res)=>{
+    if(Array.isArray(req.body.id)){
+        let query = {id : {$in: req.body.id}}
+        let collection = "All Device"
+        let output = await getData(collection, query)
+        res.send(output)
+    } 
+    else{
+        res.send('Please pass data in form of array')
     }
-    else {
-        query = {}
+})
+
+
+
+// Page 5 route > List of all orders wrt user
+
+app.get('/orders', async(req, res)=>{
+    let query = {}
+    let collection = 'Orders'
+    if(req.query.email){
+        query = {email : req.query.email}
     }
-    let collection = 'Webcam'
     let output = await getData(collection, query)
     res.send(output)
 })
 
-// Route for average_rating + price for audiodevice
+// Page 5 route > update order
 
-app.get('/filterad/:audiodeviceId', async (req, res) => {
-    let audiodeviceId =(req.params.audiodeviceId)
-    let lprice = (req.query.lprice)
-    let hprice = (req.query.hprice)
+app.put('/updateOrder', async(req, res)=>{
+    let collection = 'Orders'
+    let condition = {"_id": new mongo.ObjectId(req.body._id)}
+    let data = {
+        $set : {
+            'status' : req.body.status
+        }
+    }
+    let output = await updateData(collection,condition,data)
+    res.send(output)
+})
 
-    if (lprice && hprice) {
-        query = {
-            'audiodeviceId': (audiodeviceId),
-            $and:[{price:{ $gt:lprice,$lt:hprice}}]
-        }        
-    }
-    else {
-        query = {}
-    }
-    let collection = 'Headsets and Audio'
-    let output = await getData(collection, query)
+// Page 5 route > delete order
+
+app.delete('/deleteOrder', async(req,res)=>{
+    let collection = 'Orders'
+    let condition = {"_id": new mongo.ObjectId(req.body._id) }
+    let output = await deleteData(collection, condition)
     res.send(output)
 })
 
