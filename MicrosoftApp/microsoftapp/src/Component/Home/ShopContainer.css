@@ -1,0 +1,105 @@
+.shopContainer {
+    height: 252px;
+}
+
+/* Box container  */
+
+.boxContainer {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24%;
+    gap: 11%;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.box img {
+    width: 40%;
+    height: 56%;
+
+}
+
+
+.boxInfo a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.invertBox {
+    filter: invert() !important;
+}
+
+/* Get temperature button  */
+
+#getTemp {
+    height: 50px;
+    width: 58px;
+    font-size: 17px;
+    border-radius: 25%;
+    position: fixed;
+    float: right;
+    top: 80%;
+    padding-bottom: 6px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 0 4px black;
+    right: 13px;
+    font-family: anton;
+    font-family: 'Oswald', sans-serif;
+    z-index: 10;
+}
+
+#getTemp:hover {
+    background: linear-gradient(rgb(44, 168, 230), rgb(112, 112, 161));
+}
+
+.geoLoc {
+    background: linear-gradient(rgb(183, 183, 236), blue);
+    color: white;
+}
+
+.alert {
+    position: fixed;
+    top: 10%;
+    z-index: 12;
+    left: 38%;
+    visibility: hidden;
+}
+
+.stylish {
+    font-family: 'Croissant One', cursive;
+}
+
+.heading {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.7rem;
+    position: relative;
+    width: 15%;
+    left: 1%;
+    margin-top: 1.5% !important;
+}
+
+.invertHeading {
+    color: white !important;
+}
+
+.box:hover {
+    transform: scale(1.3);
+}
+

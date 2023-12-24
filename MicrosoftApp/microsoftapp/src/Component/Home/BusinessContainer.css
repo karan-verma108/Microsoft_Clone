@@ -1,0 +1,58 @@
+.businessContainer {
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4% !important;
+}
+
+.newCard {
+    position: relative;
+    top: 7%;
+    height: 333px;
+    width: 293px;
+    border-radius: 1%;
+    border: none;
+    box-shadow: 0px 1px 2px white;
+}
+
+.newCard img {
+    border-radius: 0px;
+    height: 54%;
+}
+
+#sTwo {
+    height: 64%;
+}
+
+#win11 {
+    height: 70%;
+
+}
+
+#win365 {
+    height: 70%;
+
+}
+
+.jalwa {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+
+.fnt {
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+.headNPara {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}

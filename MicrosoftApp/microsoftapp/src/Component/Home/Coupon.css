@@ -1,0 +1,63 @@
+/* Coupon  */
+
+#coupon {
+    height: 300px;
+    width: 600px;
+    position: fixed;
+    margin-top: 8% !important;
+    margin-left: 31% !important;
+    z-index: 5;
+    box-shadow: 1px 1px 7px white;
+    visibility: hidden;
+    display: flex;
+    border-radius: 6px;
+    justify-content: space-between;
+    background-color: rgb(226, 213, 213);
+
+}
+
+.mainBtn {
+    position: relative;
+    width: 21px;
+    height: 19px;
+    border-radius: 11px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 18px;
+    bottom: 6px;
+    box-shadow: 1px 1px 7px white;
+
+}
+
+.couponContent {
+    width: 62%;
+    height: 100%;
+}
+
+.couponContent img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gabarito', cursive;
+    gap: 14px;
+
+}
+
+.resizeBtn {
+    width: 100px !important;
+    height: 25px !important;
+    border-radius: 5px;
+}
+
+.infoInside {
+    font-size: 23px;
+}

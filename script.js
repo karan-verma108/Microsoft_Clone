@@ -63,8 +63,8 @@ const changeMode = () => {
         socialBox.classList.toggle('socialInvert');
     }
 
-    for(let i = 0; i<53; i++){
-        const footA = document.getElementsByClassName('footA')[i];
+    for(let j = 0; j<53; j++){
+        const footA = document.getElementsByClassName('footA')[j];
         footA.classList.toggle('footInvert');
     }
 }

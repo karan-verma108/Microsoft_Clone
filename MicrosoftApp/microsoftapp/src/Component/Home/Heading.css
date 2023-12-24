@@ -1,0 +1,13 @@
+.heading {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.7rem;
+    position: relative;
+    width: 15%;
+    left: 1%;
+    margin-top: 1.5% !important;
+}
+
+.invertHeading {
+    color: white !important;
+}

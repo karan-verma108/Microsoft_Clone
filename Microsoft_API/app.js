@@ -17,14 +17,23 @@ app.get('/', (req, res) => {
     res.send('Hi from Express.js')
 })
 
+//first route
+
+// app.get('/alldevice', async(req,res)=>{
+//     let query = {}
+//     let collection = 'AllDevice'
+//     let output = await getData(collection, query)
+//     res.send(output)
+// })
+
 // Page 1 routes 
 app.get('/pcdevice', async (req, res) => {
     let query = {}
     if (req.query.id && req.query.average_rating && req.query.price) {
         query = {
             'id': Number(req.query.id),
-            'average_rating': (req.query.average_rating),
-            'price': (req.query.price)
+            'average_rating': toString(req.query.average_rating),
+            'price': toString(req.query.price)
         }
     }
     else if (req.query.id) {
@@ -184,6 +193,33 @@ app.get('/alldevice', async (req, res) => {
 })
 
 //Page 3 route > list of devices of selected category
+
+app.get('/devices', async (req, res) => {
+    let query = {}
+    if (req.query.id && req.query.average_rating && req.query.price && req.query.category_id) {
+        query = {
+            'id': Number(req.query.id),
+            'average_rating': (req.query.average_rating),
+            'price': (req.query.price),
+            'cateogory_id' : Number(req.query.category_id)
+        }
+    }
+    else if (req.query.id) {
+        query = { 'id': Number(req.query.id) }
+    }
+    else if (req.query.average_rating) {
+        query = { 'average_rating': (req.query.average_rating) }
+    }
+    else if (req.query.price) {
+        query = { 'price': (req.query.price) }
+    }
+    else if (req.query.category_id) {
+        query = { 'category_id': Number (req.query.category_id) }
+    }
+    let collection = 'All Device'
+    let output = await getData(collection, query)
+    res.send(output)
+})
 
 
 app.get('/devices/:category_id', async (req, res) => {

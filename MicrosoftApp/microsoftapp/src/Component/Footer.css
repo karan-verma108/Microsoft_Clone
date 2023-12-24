@@ -1,0 +1,78 @@
+/* Footer starts here  */
+
+.footer {
+    border-top: 1px solid white;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Foot container inside  */
+
+#footContainerInside {
+    display: flex;
+    gap: 4%;
+    margin-top: 2% !important;
+    height: 332px;
+    padding-left: 4.5% !important;
+}
+
+.footBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+/* .footContent a{
+    color: black;
+} */
+
+.footContent h4 {
+    font-weight: bold;
+}
+
+.footInvert {
+    color: white !important;
+}
+
+/* Foot container outside  */
+
+
+#footContainerOutside {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 0 !important;
+    font-size: 1.2rem;
+}
+
+.leftFoot {
+    gap: 17%;
+    display: flex;
+    margin-left: 4% !important;
+    width: 20%;
+}
+
+.ico {
+    font-size: 1.6rem;
+}
+
+.rightFoot {
+    display: flex;
+    gap: 2%;
+    width: 34%;
+}
+
+
+.footLeftIn {
+    display: flex;
+    gap: 8px;
+}

@@ -1,0 +1,42 @@
+/* Third container */
+
+.thirdContainer {
+    width: 92%;
+    height: 500px;
+    position: relative;
+    margin-left: 4% !important;
+    margin-top: 4% !important;
+}
+
+.thirdContainer::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url('https://www.equitypandit.com/wp-content/uploads/2022/04/GettyImages-1323900927-d4b8e26cf28f44129e189465fa5a73a8.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+#insideContainerOne {
+    width: 35%;
+    position: relative;
+    left: 58%;
+    top: 4%;
+}
+
+#insideContainerOne button {
+    padding: 8px !important;
+    width: 21.5%;
+    background-color: rgb(104, 213, 246);
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.commonUpgrade {
+    color: white;
+    font-size: 3.8rem;
+    font-family: 'Kanit', sans-serif;
+}
