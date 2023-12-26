@@ -1,0 +1,132 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body{
+    background: none !important;
+}
+
+/* main image div  */
+.teamsMainDiv{
+    height: 650px;
+    position: relative;
+}
+
+.teamsMainDiv::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Teamsv2?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3596&hei=1782&qlt=95&fit=constrain');
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+/* text div  */
+.teamsTextDiv{
+    padding: 134px 0 64px 90px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.teamsTextDiv > h2{
+    font-size: 5rem;
+}
+
+.teamsTextDiv > p{
+    text-align: start;
+}
+
+/* second heading div  */
+
+.teamSecondHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 42px 0 !important;
+    gap: 21px;
+}
+
+/* pic container  */
+
+.teamsPicContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 78px !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px !important;
+    box-shadow: 0 0 5px gray;
+    padding-top: 45px !important;
+    border-radius: 16px;
+    padding-bottom: 45px !important;
+    gap: 30px;
+}
+
+.teamsPicBox{
+    width: 23%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    box-shadow: 0 0 5px #d6c4c4;
+}
+
+.teamsPicBox > h3{
+    padding-left: 20px !important;
+}
+
+.teamsPicBox img{
+    width: 100%;
+    height: 70%;
+}
+
+/* last section  */
+
+.teamsLastHead{
+    padding: 42px 0 !important;
+    text-align: center;
+}
+
+.teamsBigSection{
+    padding: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px !important;
+    margin-top: 10px !important;
+    padding-bottom: 70px !important;
+    border-bottom: 1px solid;
+}
+
+.innerTeamsBox{
+    width: 525px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.innerTeamsBox img{
+    width: 100%;
+    height: 43%;
+}
+
+.innerTeamsBox h2, p{
+    text-align: center;
+}
+
+#leftTeams{
+    padding-right: 120px !important;
+}
+
+#rightTeams{
+    border-left: 1px solid gray;
+    padding-left: 120px !important;
+}

@@ -6,6 +6,13 @@ import Main from './Main'
 import Home from './Home/Home'
 import Device from './Devices/DeviceLogic';
 import Microsoft365 from './Extras/Microsoft365';
+import Surface from './Extras/Surface'
+import Teams from './Extras/Teams'
+import Windows from './Extras/Windows'
+import CloudPC from './Extras/CloudPC'
+import Xbox from './Extras/Xbox'
+import Support from './Extras/Support'
+import DeviceDetails from './DeviceDetails/DeviceDetailsLogic'
 
 const Routing = () => {
     return (
@@ -15,9 +22,15 @@ const Routing = () => {
                 <Routes>
                     <Route path='/' element={<Main/>}> 
                         <Route index element={<Home/>}/> 
-                        <Route path='/devices' element={<Device/>}/> 
                         <Route path='/microsoft365' element={<Microsoft365/>}/>
+                        <Route path='/surface' element={<Surface/>}/>
+                        <Route path='/teams' element={<Teams/>}/>
+                        <Route path='/windows' element={<Windows/>}/>
+                        <Route path='/cloudpc' element={<CloudPC/>}/>
+                        <Route path='/xbox' element={<Xbox/>}/>
+                        <Route path='/support' element={<Support/>}/>
                         <Route path='/devices/:category_id' element={<Device/>}/> 
+                        <Route path='/devicedetails' element={<DeviceDetails/>}/>
                     </Route>
                 </Routes>
                 <Footer/>

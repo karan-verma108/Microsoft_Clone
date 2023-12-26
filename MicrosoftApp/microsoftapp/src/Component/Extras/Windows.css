@@ -1,0 +1,96 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.winFirstBox{
+    height: 600px;
+    display: flex;
+    padding: 64px !important;
+}
+
+.winTextDiv{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.winTextDiv > h2{
+    font-size: 7rem;
+}
+
+.winTextDiv > p{
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+.winImgDiv{
+    width: 50%;
+    height: 100%;
+}
+
+.winImgDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.winTextEle{
+    position: relative;
+    top: 65px;
+}
+
+.winSecHeading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 80px 0 !important;
+}
+
+.winSecHeading > h2{
+    font-size: 7rem;
+}
+
+.winSecHeading > p{
+    font-size: 1.8rem;
+}
+
+.winImgBox{
+    height: 668px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 61px !important;
+}
+
+.windowsImgDiv{
+    width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    box-shadow: 0 0 4px #dcb6b6;
+    border-radius: 10px;
+    padding: 10px !important;
+}
+
+.windowsImgDiv > h2{
+    font-size: 3.5rem;
+}
+
+.windowsImgDiv > p{
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.windowsImgDiv img{
+    width: 100%;
+    height: 50%;
+}
+

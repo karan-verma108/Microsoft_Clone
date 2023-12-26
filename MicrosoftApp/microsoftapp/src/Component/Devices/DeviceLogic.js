@@ -6,40 +6,22 @@ import DeviceDisplay from "./DeviceDisplay";
 
 const DeviceLogic = () => {
 
-    const [category_id, setCategory_id] = useState([]);
+    let params = useParams();
+    let categoryId = params.category_id;
 
-    useEffect(() => {
-        axios.get(`http://localhost:8000/devices`)
-            .then(res => { setCategory_id(res.data) })
-            .catch((err) => console.log(err))
-    })
+    const [category_id, setCategory_id] = useState();
 
-    // iterating over the data 
-
-    const renderCategory = (data) => {
-        if (data) {
-            return data.map((item) => {
-                return (
-                    <div key={item.id} className="listingBox">
-                        <img src={item.image} alt="pc" />
-                        <div className="listing-box-inside">
-                            <h3 className="font-style">Name : {item.name} </h3>
-                            <h4 className="font-style">Price : {item.price}</h4>
-                            <h4 className="font-style">Average Rating : {item.average_rating}★ | {item.rating_text}</h4>
-                            <p className="font-style">Info. | {item.info}</p>
-                        </div>
-                    </div>
-                )
-            })
-        }
-    }
+    useEffect(()=>{
+        sessionStorage.setItem('categoryID', categoryId)
+        axios.get(`http://localhost:8000/devices?category_id=${categoryId}`)
+        .then((res)=>{
+            setCategory_id(res.data);
+        })
+    },[])
 
     return (
         <>
-            <h1>All Devices</h1>
-            <div className="listingContainer">
-                {renderCategory(category_id)}
-            </div>
+            <DeviceDisplay categoryData = {category_id}/>
         </>
     )
 

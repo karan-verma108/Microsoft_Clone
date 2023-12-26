@@ -61,16 +61,16 @@ const ShopContainer = () => {
                 <div className="boxContainer">
                     <div className="box">
                         <img src="https://cdn-icons-png.flaticon.com/512/906/906325.png" alt="Xbox" title="Xbox" />
-                        <div className="boxInfo stylish"><a className="anchor" href="/">Buy Xbox</a></div>
+                        <div className="boxInfo stylish"><Link to={'/xbox'} className="anchor" href="/">Buy Xbox</Link></div>
                     </div>
                     <div className="box">
                         <img src="https://icon-library.com/images/surface-icon/surface-icon-18.jpg" alt="Surface devices"
                             title="Surface devices" />
-                        <div className="boxInfo stylish"><a className="anchor" href="/">Explore Surface Devices</a></div>
+                        <div className="boxInfo stylish"><Link to={'/surface'} className="anchor" href="/">Explore Surface Devices</Link></div>
                     </div>
                     <div className="box">
                         <img src="https://cdn-icons-png.flaticon.com/512/220/220600.png" alt="Windows 11" title="Windows 11" />
-                        <div className="boxInfo stylish"><a className="anchor" href="/">Get Windows 11</a></div>
+                        <div className="boxInfo stylish"><Link to={'/windows'} className="anchor" href="/">Get Windows 11</Link></div>
                     </div>
                     <div className="box">
                         <img src="https://cdn-icons-png.flaticon.com/512/732/732222.png" alt="Microsoft 365"

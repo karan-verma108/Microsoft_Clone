@@ -28,19 +28,19 @@ const Footer = () => {
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Surface Pro 9</a>
+                        <Link to={'/surface'} className="footA" href="/">Surface Pro 9</Link>
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Surface Laptop 5</a>
+                        <Link to={'/surface'} className="footA" href="/">Surface Laptop 5</Link>
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Surface Laptop Studio</a>
+                        <Link to={'/surface'} className="footA" href="/">Surface Laptop Studio</Link>
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Surface Laptop Go 2</a>
+                        <Link to={'/surface'} className="footA" href="/">Surface Laptop Go 2</Link>
                     </div>
 
                     <div className="footContent">
@@ -64,7 +64,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Microsoft Store Support</a>
+                        <Link to={'/support'} className="footA" href="/">Microsoft Store Support</Link>
                     </div>
 
                     <div className="footContent">
@@ -84,7 +84,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Microsoft in education </a>
+                        <Link to={'/microsoft365'} className="footA" href="/">Microsoft in education </Link>
                     </div>
 
                     <div className="footContent">
@@ -92,15 +92,15 @@ const Footer = () => {
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Microsoft Teams for Education </a>
+                        <Link to={'/teams'} className="footA" href="/">Microsoft Teams for Education </Link>
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Microsoft 365 Education </a>
+                        <Link to={'/microsoft365'} className="footA" href="/">Microsoft 365 Education </Link>
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Office Education </a>
+                        <Link to={'/microsoft365'} className="footA" href="/">Office Education </Link>
                     </div>
 
                     <div className="footContent">
@@ -124,7 +124,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Microsoft Cloud</a>
+                        <Link to={'/cloudpc'} className="footA" href="/">Microsoft Cloud</Link>
                     </div>
 
                     <div className="footContent">
@@ -152,7 +152,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Microsoft Teams</a>
+                        <Link to={'/teams'} className="footA" href="/">Microsoft Teams</Link>
                     </div>
 
                 </div>
@@ -173,7 +173,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footContent">
-                        <a className="footA" href="/">Microsoft Learn</a>
+                        <Link to={'/microsoft365'} className="footA" href="/">Microsoft Learn</Link>
                     </div>
 
                     <div className="footContent">
@@ -245,12 +245,12 @@ const Footer = () => {
 
                     <div className="footLeftIn">
                         <i className="glyphicon glyphicon-globe ico"></i>
-                        <a className="footA" href="/">English (India)</a>
+                        <span className="footA" href="/">English (India)</span>
                     </div>
 
                     <div className="footLeftIn">
                         <i className="glyphicon glyphicon-check ico"></i>
-                        <a className="footA" href="/">Your Privacy Choices</a>
+                        <span className="footA" href="/">Your Privacy Choices</span>
                     </div>
 
                 </div>
@@ -258,27 +258,27 @@ const Footer = () => {
                 <div className="rightFoot">
 
                     <div className="footRightIn">
-                        <a className="footA" href="/">Contact Microsoft</a>
+                        <span className="footA" href="/">Contact Microsoft</span>
                     </div>
 
                     <div className="footRightIn">
-                        <a className="footA" href="/">Privacy</a>
+                        <span className="footA" href="/">Privacy</span>
                     </div>
 
                     <div className="footRightIn">
-                        <a className="footA" href="/">Terms of use</a>
+                        <span className="footA" href="/">Terms of use</span>
                     </div>
 
                     <div className="footRightIn">
-                        <a className="footA" href="/">Trademarks</a>
+                        <span className="footA" href="/">Trademarks</span>
                     </div>
 
                     <div className="footRightIn">
-                        <a className="footA" href="/">About our ads</a>
+                        <span className="footA" href="/">About our ads</span>
                     </div>
 
                     <div className="footRightIn">
-                        <a className="footA" href="/">Microsoft &copy; 2023</a>
+                        <span className="footA" href="/">Microsoft &copy; 2023</span>
                     </div>
                 </div>
 

@@ -91,7 +91,7 @@ const Header = () => {
         if (data) {
             return data.map((item) => {
                 return (
-                    <Link to={`/devices`} key={item.id} >
+                    <Link to={`/devices/${item.category_id}`} key={item.id} >
                         <li key={item.id} value={item.category_id} className='liBox'>
                             {item.name}
                         </li>
@@ -104,7 +104,9 @@ const Header = () => {
     // getting the selected value by user 
 
     const handlePcName = (event) => {
-        console.log(event.target.value);
+        // console.log(event.target.value);
+        // const category_id = event.target.value;
+
     }
 
     // <-------- useState ends here for pcName --------->
@@ -124,7 +126,7 @@ const Header = () => {
         if (data) {
             return data.map((item) => {
                 return (
-                    <Link to={`/devices`} key={item.id} >
+                    <Link to={`/devices/${item.category_id}`} key={item.id} >
                         <li key={item.id} value={item.category_id} className='liBox'>
                             {item.name}
                         </li>
@@ -157,7 +159,7 @@ const Header = () => {
         if (data) {
             return data.map((item) => {
                 return (
-                    <Link to={`/devices`} key={item.id} >
+                    <Link to={`/devices/${item.category_id}`} key={item.id} >
                         <li key={item.id} value={item.category_id} className='liBox'>
                             {item.name}
                         </li>
@@ -190,7 +192,7 @@ const Header = () => {
         if (data) {
             return data.map((item) => {
                 return (
-                    <Link to={`/devices`} key={item.id} >
+                    <Link to={`/devices/${item.category_id}`} key={item.id} >
                         <li key={item.id} value={item.category_id} className='liBox'>
                             {item.name}
                         </li>
@@ -223,7 +225,7 @@ const Header = () => {
         if (data) {
             return data.map((item) => {
                 return (
-                    <Link to={`/devices`} key={item.id} >
+                    <Link to={`/devices/${item.category_id}`} key={item.id} >
                         <li key={item.id} value={item.category_id} className='liBox'>
                             {item.name}
                         </li>
@@ -256,7 +258,7 @@ const Header = () => {
         if (data) {
             return data.map((item) => {
                 return (
-                    <Link to={`/devices`} key={item.id} >
+                    <Link to={`/devices/${item.category_id}`} key={item.id} >
                         <li key={item.id} value={item.category_id} className='liBox'>
                             {item.name}
                         </li>
@@ -287,16 +289,16 @@ const Header = () => {
                 <div id="lg-width" className="navItemsLeft radius box-shadow"><Link to={`/microsoft365`} className="navAnchor" href="microsoft365.html">Microsoft 365</Link>
 
                 </div>
-                <div id="team-wd" className="navItemsLeft radius box-shadow"><a className="navAnchor" href="/">Teams</a></div>
-                <div className="navItemsLeft radius box-shadow"><a className="navAnchor" href="/">Windows</a></div>
-                <div id="surfaceId" className="navItemsLeft radius box-shadow"><a className="navAnchor" href="/">Surface</a></div>
+                <div id="team-wd" className="navItemsLeft radius box-shadow"><Link to={'/teams'} className="navAnchor" href="/">Teams</Link></div>
+                <div className="navItemsLeft radius box-shadow"><Link to={'/windows'} className="navAnchor" href="/">Windows</Link></div>
+                <div id="surfaceId" className="navItemsLeft radius box-shadow"><Link to={'/surface'} className="navAnchor" href="/">Surface</Link></div>
 
             </div>
 
             <div className="logoDiv">
-                <a href="/">
+                <Link to={'/'}>
                     <img src="https://cdn-icons-png.flaticon.com/512/5969/5969206.png"
-                        alt="Microsoft icon" title="Microsoft icon" /> </a>
+                        alt="Microsoft icon" title="Microsoft icon" /> </Link>
             </div>
 
             <div className="rightNav">
@@ -336,7 +338,7 @@ const Header = () => {
                 </div>
 
 
-                <div id="supportId" className="navItemsRight radius box-shadow"><a className="navAnchor" href="/">Support <i className="glyphicon glyphicon-phone-alt"></i></a></div>
+                <div id="supportId" className="navItemsRight radius box-shadow"><Link to={'/support'} className="navAnchor" href="/">Support <i className="glyphicon glyphicon-phone-alt"></i></Link></div>
 
                 <div id="cart-wd" className="navItemsRight radius box-shadow"><a className="navAnchor" href="/">Cart <i className="glyphicon glyphicon-shopping-cart"></i></a></div>
                 <div id="off" className="navItemsRight radius box-shadow"><a className="navAnchor" href="/">Sign in <i className="glyphicon glyphicon-log-in"></i></a></div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ThirdContainer.css'
 
 const ThirdContainer = () => {
@@ -7,7 +8,7 @@ const ThirdContainer = () => {
             <div id="insideContainerOne">
 
                 <div className="commonUpgrade">Upgrade to Windows 365 Cloud PC!</div>
-                <button>Click here</button>
+                <button><Link to={'/cloudpc'}>Click here</Link></button>
             </div>
 
         </div>

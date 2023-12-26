@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import './BusinessContainer.css'
 
 const BusinessContainer = () => {
@@ -6,7 +7,7 @@ const BusinessContainer = () => {
         <div className="businessContainer">
 
             <div className="card newCard  newHeight">
-                <a className="anchor" href="/">
+                <Link to={'/surface'} className="anchor" href="/">
                     <img id="sTwo" src="https://i.pcmag.com/imagery/articles/00Dt4peUWCWaQlgiswLQtpI-10.jpg"
                         alt="Surface laptop studio 2 for business" />
                     <div className="headNPara">
@@ -18,11 +19,11 @@ const BusinessContainer = () => {
                             featuring three flexible modes. </p>
 
                     </div>
-                </a>
+                </Link>
             </div>
 
             <div className="card newCard newHeight">
-                <a className="anchor" href="/">
+                <Link to={'/surface'} className="anchor" href="/">
                     <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/AX/YV/TI/79270826/1.jpg"
                         alt="Surface laptop 3 for business" />
                     <div className="headNPara">
@@ -34,12 +35,12 @@ const BusinessContainer = () => {
                             life your business needs. </p>
 
                     </div>
-                </a>
+                </Link>
             </div>
 
             <div className="card newCard newHeight">
 
-                <a className="anchor" href="/">
+                <Link to={'/windows'} className="anchor" href="/">
                     <img id="win11" src="https://m.media-amazon.com/images/I/6155z7Z2DjL.jpg" alt="Windows 11 for business" />
                     <div className="headNPara">
 
@@ -50,12 +51,12 @@ const BusinessContainer = () => {
                         </p>
 
                     </div>
-                </a>
+                </Link>
             </div>
 
 
             <div className="card newCard newHeight">
-                <a className="anchor" href="/">
+                <Link to={'/cloudpc'} className="anchor" href="/">
                     <img id="win365" src="https://i.ytimg.com/vi/NEKe1NW3sLc/maxresdefault.jpg" alt="Windows 365 cloud PC" />
                     <div className="headNPara">
 
@@ -65,7 +66,7 @@ const BusinessContainer = () => {
                         <p className="fnt">Securely stream your Windows experience from the Microsoft cloud to any device. </p>
 
                     </div>
-                </a>
+                </Link>
             </div>
 
         </div>

@@ -1,0 +1,130 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body{
+    background: url('https://wallpapercave.com/wp/wp7213366.jpg');
+    background-size: cover !important;
+}
+
+/* heading section  */
+
+.microsoft365Heading{
+    margin: 72px 0 0 59px !important;
+    box-shadow: 0 0 3px #e4d5d5;
+    padding: 40px 0 40px 23px !important;
+    background: linear-gradient(370deg, lightblue, lightcyan, transparent) !important;
+    border-radius: 22px;
+}
+
+.microsoft365Heading > h2{
+    font-size: 5rem !important;
+    padding: 12px 0 !important;
+}
+
+.microsoft365Heading > p{
+    padding-top: 7px !important;
+    text-align: start;
+}
+
+/* main section start  */
+
+.main_365_Section{
+    display: flex; 
+    flex-direction: column;
+    padding-top: 52px !important;
+}
+
+/* headings of main section */
+
+.main365Head{
+    margin: 22px 0 0 59px !important;
+}
+
+.main_365_Section > h2{
+    font-weight: bold;
+}
+
+/* content div  */
+.inner_365_Container{
+    display: flex;
+    padding: 56px 77px 60px 100px !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/* small divs container */
+.smallDivs365{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* small divs themselves */
+.inner365Divs{
+    width: 300px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, white, transparent);
+    border-radius: 28px;
+    gap: 18px;
+    padding-left: 23px !important;
+    box-shadow: 0 0 9px #dbcccc;
+}
+
+.inner365Divs img{
+    width: 18%;
+    height: 13%;
+}
+
+.innerDiv-pad{
+    position: relative;
+    top: 16px;
+    text-align: start;
+}
+
+/* large image div  */
+.largeDiv365{
+    width: 600px;
+    height: 733px;
+    border-radius: 13px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.largeText365{
+    position: relative;
+    left: 38px;
+    bottom: 220px;
+    color: black;
+    padding: 9px 0 !important;
+}
+
+.largeDiv365 > h2 {
+    font-size: 3.3rem;
+}
+
+.largeDiv365 > p {
+    font-size: 1.4rem;
+    text-align: start;
+}
+
+.largeDiv365::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('https://cdn-res.keymedia.com/cms/images/us/037/0223_637242926815337822.jpg');
+    border-radius: 13px;
+    z-index: -1;
+    filter: invert(1);
+    opacity: 0.6;
+}
