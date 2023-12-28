@@ -10,10 +10,10 @@ const DeviceDetails = () => {
     let [deviceDetails, setDeviceDetails] = useState();
     let [categoryID] = useState(sessionStorage.getItem('categoryID'))
 
-    let deviceId = searchParams.getAll('id')
+    let deviceName = searchParams.getAll('id')
 
     const device_Details = async () => {
-        const d_Data = await axios.get(`http://localhost:8000/alldevice?id=${deviceId}`)
+        const d_Data = await axios.get(`http://localhost:8000/alldevice?id=${deviceName}`)
         setDeviceDetails(d_Data.data[0]);
     }
 
@@ -54,6 +54,14 @@ const DeviceDetails = () => {
                                 </div>
                             </div>
                     </div>
+                </div>
+            )
+        }
+        else{
+            return( 
+                <div>
+                <h2>Loading...</h2>
+                <img src= 'https://i.pinimg.com/originals/c7/e1/b7/c7e1b7b5753737039e1bdbda578132b8.gif' alt='loading' />
                 </div>
             )
         }

@@ -1,11 +1,71 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import {Link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 // const baseUrl = process.env.REACT_APP_API_URL
 
 const Header = () => {
+
+    const [userData, setUserData] = useState('');
+    let navigate = useNavigate();
+
+    //checking if we got the token or not
+
+    useEffect(() => {
+        if (sessionStorage.getItem('lkn') != null) {
+            fetch(`http://localhost:5001/api/auth/userInfo`, {
+                method: 'GET',
+                headers: {
+                    'x-access-token': sessionStorage.getItem('lkn')
+                }
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    setUserData(data)
+                })
+        }
+    }, [])
+
+
+    // removing the user credentials when logged out 
+    const handleLogout = () =>{
+        sessionStorage.removeItem('lkn');
+        sessionStorage.removeItem('userInfo');
+        setUserData('');
+        navigate('/');
+    }
+
+    const conditionalHeader = () => {
+        if (userData) {
+            if (userData.name) {
+                sessionStorage.setItem('userInfo', JSON.stringify(userData))
+                return (
+                    <>
+                        <button className='btn btn-primary'>
+                            <span className='glyphicon glyphicon-user'></span> Hi, {userData.name}
+                        </button> &nbsp;
+                        <button onClick={handleLogout} className='btn btn-success'>
+                            <span className='glyphicon glyphicon-log-out'></span> Logout
+                        </button> &nbsp;
+                    </>
+                )
+            }
+        } else {
+            return (
+                <>
+                    <Link to={'/register'} className='btn btn-primary'>
+                        <span className='glyphicon glyphicon-user'></span> Sign Up
+                    </Link> &nbsp;
+                    <Link to={'/login'} className='btn btn-success'>
+                        <span className='glyphicon glyphicon-log-in'></span> Login
+                    </Link> &nbsp;
+                </>
+            )
+        }
+
+    }
 
     // const onloadPage = () => {
     //     document.getElementById('coupon').style.visibility = 'visible';
@@ -141,7 +201,7 @@ const Header = () => {
     const handleMouseName = (event) => {
         console.log(event.target.value);
     }
-    
+
     // <-------- useState ends here for mouseName --------->
 
     //3) <-------- useState for keyboardName --------->
@@ -174,7 +234,7 @@ const Header = () => {
     const handleKeyboardName = (event) => {
         console.log(event.target.value);
     }
-    
+
     // <-------- useState ends here for keyboardName --------->
 
     //4) <-------- useState for webcamName --------->
@@ -207,7 +267,7 @@ const Header = () => {
     const handleWebcamName = (event) => {
         console.log(event.target.value);
     }
-    
+
     // <-------- useState ends here for webcamName --------->
 
     //5) <-------- useState for audioDeviceName --------->
@@ -240,7 +300,7 @@ const Header = () => {
     const handleAudioDeviceName = (event) => {
         console.log(event.target.value);
     }
-    
+
     // <-------- useState ends here for xboxName --------->
 
     //6) <-------- useState for audioDeviceName --------->
@@ -273,7 +333,7 @@ const Header = () => {
     const handleXboxName = (event) => {
         console.log(event.target.value);
     }
-    
+
     // <-------- useState ends here for xboxName --------->
 
     return (
@@ -339,9 +399,7 @@ const Header = () => {
 
 
                 <div id="supportId" className="navItemsRight radius box-shadow"><Link to={'/support'} className="navAnchor" href="/">Support <i className="glyphicon glyphicon-phone-alt"></i></Link></div>
-
-                <div id="cart-wd" className="navItemsRight radius box-shadow"><a className="navAnchor" href="/">Cart <i className="glyphicon glyphicon-shopping-cart"></i></a></div>
-                <div id="off" className="navItemsRight radius box-shadow"><a className="navAnchor" href="/">Sign in <i className="glyphicon glyphicon-log-in"></i></a></div>
+                {conditionalHeader()}
             </div>
         </nav>
     )

@@ -237,7 +237,7 @@ app.get('/devices/:category_id', async (req, res) => {
 
 // Page 4 route > Place order
 
-app.post('/placeOrder', async(req, res)=>{
+app.post('/placeOrders', async(req, res)=>{
     let body = req.body
     let collection = 'Orders'
     let response = await postData(collection, body)

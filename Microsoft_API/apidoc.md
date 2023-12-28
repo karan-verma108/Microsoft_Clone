@@ -35,3 +35,22 @@
 > http://localhost:8000/updateOrder
 # (DELETE) Delete Orders
 > http://localhost:8000/deleteOrder
+
+orders data 
+
+
+_id : 658bef4665274d3407764b96
+name : "Mohan"
+email : "Mohan@gmail.com"
+address : "Hno 203,Sector D"
+phone : 477760086
+price : 14
+
+devices : Array (3)
+status : "Pending"
+order_id : 4
+
+Header.js extra data 
+
+<div id="cart-wd" className="navItemsRight radius box-shadow"><a className="navAnchor" href="/">Cart <i className="glyphicon glyphicon-shopping-cart"></i></a></div>
+                <div id="off" className="navItemsRight radius box-shadow"><a className="navAnchor" href="/">Sign in <i className="glyphicon glyphicon-log-in"></i></a></div>

@@ -13,6 +13,10 @@ import CloudPC from './Extras/CloudPC'
 import Xbox from './Extras/Xbox'
 import Support from './Extras/Support'
 import DeviceDetails from './DeviceDetails/DeviceDetailsLogic'
+import PlaceOrder from './Order/PlaceOrder'
+import ViewOrder from './Order/ViewOrder'
+import LoginComponent from './Login/LoginComponent'
+import RegisterComponent from './Login/RegisterComponent'
 
 const Routing = () => {
     return (
@@ -31,6 +35,10 @@ const Routing = () => {
                         <Route path='/support' element={<Support/>}/>
                         <Route path='/devices/:category_id' element={<Device/>}/> 
                         <Route path='/devicedetails' element={<DeviceDetails/>}/>
+                        <Route path='/placeOrder/:deviceName' element={<PlaceOrder/>}/>
+                        <Route path='/orders' element={<ViewOrder/>}/>
+                        <Route path='/login' element={<LoginComponent/>}/>
+                        <Route path='/register' element={<RegisterComponent/>}/>
                     </Route>
                 </Routes>
                 <Footer/>

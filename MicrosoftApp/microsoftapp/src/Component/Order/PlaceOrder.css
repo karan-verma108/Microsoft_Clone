@@ -1,0 +1,40 @@
+.container{
+    width: 100% !important;
+}
+
+#newCont{
+    padding: 40px 99px !important;
+}
+
+#newPanel{
+    padding: 15px !important;
+}
+
+#panHeading{
+    padding: 15px !important;
+}
+
+#bodyPan{
+    padding: 15px !important;
+}
+
+.inptText{
+    font-size: 19px;
+}
+
+.lblText{
+    font-size: 21px;
+}
+
+.finalBtn{
+    padding: 8px 21px !important;
+    position: relative;
+    top: 18px;
+}
+
+.finalH2{
+    font-size: 4.2rem;
+    position: relative;
+    top: 26px;
+    padding-left: 97px !important;
+}
